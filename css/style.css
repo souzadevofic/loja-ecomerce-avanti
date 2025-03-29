@@ -17,12 +17,12 @@
     
 }
 
-/* Aumentar a área clicável das setas */
 .custom-button-prev, .custom-button-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    z-index: 1;
 }
     
 .custom-button-prev {
@@ -612,9 +612,8 @@ footer {
     /* Section slides */
 
     .container_lancamento > h3 {
-        font-size: 15px;
-        left: 720px;
-        top: -20px;
+        font-size: 12px;
+        margin-top: 30px;
     }
     
     .imagem_modelo {
@@ -720,16 +719,17 @@ footer {
 
     .container_localizacao {
         height: 300px;
+        
     }
 
     .localizacao {
-        gap: 8px;
+        gap: 10px;
     }
 
     .localizacao span {
-        font-size: 10px;
+        font-size: 9px;
         width: 170px;
-        gap: 8px;
+    
     }
 
     .localizacao h1 {
@@ -739,7 +739,7 @@ footer {
     .container_icones {
         display: flex;
         flex-direction: column;
-        gap: 35px;
+        gap: 15px;
         margin-top: 30px;
     }
 
