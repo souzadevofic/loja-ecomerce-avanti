@@ -143,7 +143,18 @@ header {
     flex-direction: row;
     gap: 20px;
     list-style-type: none
+}
 
+.conteiner_categoria {
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+}
+
+.conteiner_categoria img {
+    height: 10px;
 }
 
 /* Section Apresentação de desconto da loja */
@@ -215,7 +226,6 @@ header {
     text-align: center;
     flex-direction: column;
     align-items: center;
-
 }
 
 .container_card > h3 {
@@ -232,7 +242,6 @@ header {
     text-align: left;
 
 }
-
 
 .container_card > button {
     background-color: #005CFF;
