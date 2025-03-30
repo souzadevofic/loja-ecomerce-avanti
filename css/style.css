@@ -12,25 +12,25 @@
     justify-content: center;
     margin-top: 50px;
     width: 70%; /* Ajusta para ocupar toda a largura */
-    height: 480px;
+    height: 330px;
     position: relative; /* Importante para posicionar as setas */
     
 }
 
 .custom-button-prev, .custom-button-next {
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     cursor: pointer;
     z-index: 1;
 }
     
 .custom-button-prev {
-    left: 190px; /* Ajuste conforme necessário */  
+    left: 180px; /* Ajuste conforme necessário */  
 }
 
 .custom-button-next {
-    right: 200px; /* Ajuste conforme necessário */
+    right: 250px; /* Ajuste conforme necessário */
 }
 
 .custom-button-prev img, .custom-button-next img {
@@ -193,6 +193,10 @@ header {
     margin-top: 70px;  
 }
 
+.imagem_modelo {
+    width: 140px;
+}
+
 .container_lancamento > h3 {
     position: absolute;
     display: flex;
@@ -203,9 +207,9 @@ header {
 
 .container_card {
     position: relative;
-    height: 420px;
+    height: 300px;
     display: flex;
-    width: 230px;
+    width: 180px;
     border: solid 1px rgb(207, 207, 207);
     border-radius: 8px;
     text-align: center;
@@ -215,26 +219,24 @@ header {
 }
 
 .container_card > h3 {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
 }
 
 .container_promo {
+    font-size: 12px;
     display: flex;
     flex-direction: column;
-    margin-right: 10px;
+    margin-left: 30px;
     width: 200px;
     text-align: left;
 
 }
 
-.imagem_modelo {
-    width: 200px;
-}
 
 .container_card > button {
     background-color: #005CFF;
-    width: 200px;
+    width: 160px;
     height: 40px;
     border: none;
     color: #ffffff;
@@ -246,24 +248,25 @@ header {
     position: relative;
     display: flex;
     background-color: #5EC0BE;
-    width: 70px;
+    width: 60px;
     color: #ffffff;
     text-align: center;
     align-items: center;
     justify-content: center;
-    bottom: 60px;
+    bottom: 45px;
     left: 10px;
-    font-size: 15px;
+    font-size: 12px;
     border-radius: 5px;
 }
 
 .container_card > span {
+    font-size: 12px;
     position: absolute;
     left: 10px;
     top: 15px;
     background-color: #00264E;
     color: #ffffff;
-    width: 60px;
+    width: 45px;
     border-radius: 5px;
 }
 
@@ -443,13 +446,6 @@ header {
     
 }
 
-.checkbox {
-    background-color: #005CFF;
-    border: 1px solid rgb(207, 207, 207); 
-    outline: none;
-    border-radius: 8px;
-}
-
 .conferir_checkbox {
     display: flex;
     align-items: center;
@@ -617,7 +613,7 @@ footer {
     }
     
     .imagem_modelo {
-        width: 60px;
+        width: 70px;
     }
 
     .container_lancamento {
@@ -644,7 +640,7 @@ footer {
 
     .container_promo {
         font-size: 9px;
-        margin-right: -80px;
+        margin-left: 90px;
         width: 200px;
     
     }
@@ -662,6 +658,7 @@ footer {
         bottom: 30px;
         left: 10px;
         font-size: 9px;
+        width: 40px;
     }
     
     .container_card > span {
@@ -778,8 +775,8 @@ footer {
     /* container registrar */
 
     .container_formulario {
-        height: 320px;
-        width: 300px;
+        height: 300px;
+        width: 250px;
     }
     
     .container_registrar h3 {
@@ -787,8 +784,8 @@ footer {
     }
     
     .form {
-        font-size: 12px;
-        width: 250px;
+        font-size: 9px;
+        width: 200px;
     }
     
     .container_conteudo  {
@@ -796,12 +793,12 @@ footer {
     }
     
     .container_conteudo span {
-        font-size: 12px;
+        font-size: 9px;
     }
     
     .botao_cadastrar {
         font-size: 11px;
-        width: 250px;
+        width: 200px;
         
     }
 
