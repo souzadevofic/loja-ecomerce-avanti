@@ -47,7 +47,7 @@ function inicializarBuscaProduto() {
         opcao.classList.add('opcao_produto');
         opcao.innerHTML = `
         <img class="icone_lupa" src="./assets/lupa.png">
-        <span>${produto.item}</span>
+        <span>você pesquisou por: ${produto.item}</span>
         `;
         opcao.addEventListener('click', () => {
           inputBuscar.value = produto.item;
@@ -61,21 +61,102 @@ function inicializarBuscaProduto() {
     }
   });
 }
-
 inicializarBuscaProduto();
 
-// function listarCategoria (){
 
-//   const categoria = querySelector('.container_categoria');
-//   const lista_categoria = document.createElement('div');
-//   lista_categoria.classList.add('lista_categoria');
-//   categoria.parentNode.appendChild(lista_categoria);
 
-//   categoria.addEventListener('categoria', () => {
-    
-//     lista_categoria.innerHTML += `
+function listarCategoria() {
+  const categoria = document.querySelector('.container_categoria');
+  if (!categoria) return;
 
-    
-//     `
-//   })
-// }
+  let listaCategoria = null; // Definindo a variável para armazenar a lista
+
+  categoria.addEventListener('click', (event) => {
+    event.stopPropagation(); // Evita que o clique se propague para o document
+
+    if (!listaCategoria) {
+      listaCategoria = document.createElement('div');
+      listaCategoria.classList.add('lista_categoria');
+      listaCategoria.style.display = 'block';
+
+      listaCategoria.innerHTML = `
+        <div class="container_listas">
+          <div class="lista_departamentos">
+            <ul>
+              <li class="texto_lista">Departamento</li>
+              <li>Departamento</li>
+              <li>Departamento</li>
+              <li>Departamento</li>
+              <li>Departamento</li>
+              <li>Departamento</li>
+              <li>Departamento</li>
+              <li>Departamento</li>
+            </ul>
+          </div>
+
+          <div class="lista_departamentos">
+            <ul>
+              <li class="texto_lista">Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+            </ul>
+
+            <ul>
+              <li class="texto_lista">Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+            </ul>
+
+            <ul>
+              <li class="texto_lista">Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+              <li>Categoria</li>
+            </ul>
+          </div>
+
+          <div class="container_da_foto_card">
+            <div class="foto_card">
+              <img src="./assets/imagem_xicara_localiza.png" alt="Produtos Novos" class="imagem_categoria">
+            </div>
+
+            <div class="container_texto_card">
+              <span>Confira os Produtos Que acabaram De chegar</span>
+              <button>Ver Todos</button>
+            </div>
+          </div>
+        </div>
+      `;
+
+      categoria.appendChild(listaCategoria);
+    } else {
+      listaCategoria.style.display = listaCategoria.style.display === 'none' ? 'block' : 'none';
+    }
+  });
+
+  // Fechar a lista ao clicar fora
+  document.addEventListener('click', (event) => {
+    if (listaCategoria && !categoria.contains(event.target) && !listaCategoria.contains(event.target)) {
+      listaCategoria.style.display = 'none';
+    }
+  });
+}
+
+// Inicializa o evento após o carregamento da página
+document.addEventListener('DOMContentLoaded', listarCategoria);
+
+

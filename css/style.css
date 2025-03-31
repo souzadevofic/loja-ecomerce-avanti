@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Poppins', sans-serif;
+    /* Torna suave o movimento do scroll */
+    scroll-behavior: smooth;
+}
+
+/* Inicio da Configuração Swipper */
 .swiper {
     display: flex;
     align-items: center;
@@ -24,7 +31,7 @@
     cursor: pointer;
     z-index: 1;
 }
-    
+
 .custom-button-prev {
     left: 180px; /* Ajuste conforme necessário */  
 }
@@ -38,12 +45,10 @@
     height: auto;
 }
 
+/* Fim da Configuração Swipper */
 
-html {
-    font-family: 'Poppins', sans-serif;
-    /* Torna suave o movimento do scroll */
-    scroll-behavior: smooth;
-}
+
+/* Inicio do Header */
 
 header {
     box-shadow: 0px 0px 2px rgb(216, 211, 211);
@@ -57,11 +62,8 @@ header {
     gap: 20px;
     position: fixed;
     z-index: 10;
-    
-
 }
 
-/* Barra de desconto */
 .container_cupom_desconto {
     background-color: #005CFF;
     width: 100%;
@@ -75,7 +77,6 @@ header {
     border-radius: 10px;
 }
 
-/* Apresentação */
 .cabecalho {
     display: flex;
     width: 100%;
@@ -107,14 +108,15 @@ header {
 }
 
 .container_busca_produto {
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     top: 85px;
     left: 370px;
     position: absolute;
-    background: white;
-    border: 0.5px solid #ccc;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 490px;
     max-height: 150px;
     overflow-y: auto;    
@@ -172,7 +174,9 @@ header {
     list-style-type: none
 }
 
-.conteiner_categoria {
+.container_categoria {
+    position: relative;
+    cursor: pointer;
     font-weight: 600;
     align-items: center;
     justify-content: center;
@@ -183,8 +187,9 @@ header {
 .conteiner_categoria img {
     height: 10px;
 }
+/* Fim do Header */
 
-/* Section Apresentação de desconto da loja */
+/* Inicio Section container_oferta */
 
 .container_oferta {
     position: relative;
@@ -222,7 +227,9 @@ header {
     color: #005CFF;
 }
 
-/* Section Lançamentos */
+/* Fim Section container_oferta */
+
+/* Inicio da Section container_lancamento*/
 
 .container_lancamento {
     position: relative;
@@ -306,7 +313,9 @@ header {
     border-radius: 5px;
 }
 
-/* Section container produto */
+/* Inicio da Section container_lancamento*/
+
+/* Inicio da Section container_produto */
 
 .container_produto {
     position: relative;
@@ -323,17 +332,12 @@ header {
 }
 
 .produto > img {
-    height: 500px;
+    height: 400px;
 }
 
-.container_produto > .texto_produto {
-    width: 600px;
-    gap: 20px;
-}
-
-.texto_produto span {
+.texto_produto {
+    width: 550px;
     display: flex;
-    width: 600px;
     flex-direction: column;
     gap: 20px;
     
@@ -344,7 +348,9 @@ header {
 
 }
 
-/* Section de localizacao de lojas */
+/* Fim da Section container_produto */
+
+/* Inicio Section da container_localizacao */
 
 .container_localizacao {
     margin-top: 80px;
@@ -400,7 +406,9 @@ header {
     height: 400px;
 }
 
-/* Section escritorio */
+/* Fim Section da container_localizacao */
+
+/* Inicico da Section container_contato */
 
 .container_contato {
     position: relative;
@@ -499,6 +507,9 @@ header {
     font-weight: 700;
 }
 
+/* Fim da Section container_contato */
+
+/* Inicico do Footer */
 
 footer {
     width: 100%;
@@ -570,10 +581,92 @@ footer {
     height: 30px;
 }
 
+/* Fim do Footer */
 
-/* Responsivo Mobile */
 
+/* Inicio das configurações de HTML no javascript no lista_categoria*/
+.lista_categoria {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.container_listas {
+    display: flex;
+    justify-content: space-between;
+    gap: 160px;
+}
+
+.container_listas .lista_departamentos:first-child {
+    background-color: #F5F5F5;
+    width: 200px;
+}
+
+.lista_departamentos {
+    display: flex;
+    gap: 50px;
+}
+
+.lista_departamentos ul {
+    list-style: none;
+}
+
+.lista_departamentos li {
+    font-size: 14px;
+    color: #000000;
+    padding: 5px;
+   
+}
+
+.container_listas .texto_lista {
+    color: #005CFF;
+}
+
+.container_da_foto_card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto_card img {
+    border-radius: 10px;
+    height: 300px;
+    width: 250px;
+}
+
+.container_texto_card  {
+    left: 20px;
+    position: absolute;
+    color: #f8fbff;
+    font-size: 25px;
+    width: 150px;
+}
+
+.container_da_foto_card button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #F5F5F5;
+    font-weight: 900;
+    border-color: #F5F5F5;
+    border-radius: 8px;
+    background-color: transparent;
+    height: 40px;
+    width: 120px;
+}
+
+/* Fim das configurações de HTML no javascript no lista_categoria*/
+
+/* Responsividade (Mobile) */
 @media (max-width: 768px) {
+
+/* Inicio do Header */
     .container_cupom_desconto {
         font-size: 12px;
     }
@@ -583,7 +676,7 @@ footer {
     }
 
     .container_barra_pesquisa > img {
-        height: 10px;
+        height: 15px;
     }
 
     .container_barra_pesquisa > input {
@@ -595,8 +688,7 @@ footer {
     .container_busca_produto {
         font-size: 9px;
         top: 80px;
-        left: 120px;
-        border: 1px solid #ccc;
+        left: 140px;
         width: 195px;  
       }
 
@@ -621,12 +713,59 @@ footer {
         
     }
 
-    .lista_navegacao li:nth-child(n+5) { 
+    .lista_navegacao li:nth-child(n+6) { 
         display: none;
     }
 
+    /* Inicio das configurações de HTML no javascript no lista_categoria(Responsivo)*/
+    .lista_categoria {
+        top: 30px;
+        left: -30px; 
+        height: 150px;
+    }
+    
+    .container_listas { 
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    
+    .container_listas .lista_departamentos:first-child {
+        justify-content: end;
+        width: 80px;
+        height: 150px;
+    }
 
-    /* Section Container Oferta */
+    .lista_departamentos {
+        gap: 20px;
+    }
+
+    .lista_departamentos li {
+        font-size: 10px;
+    }
+
+    .foto_card img {
+        height: 140px;
+        width: 90px;
+    }
+
+    .container_texto_card  {
+        font-size: 12px;
+        width: 100px;
+        left: 5px;
+    }
+    
+    .container_da_foto_card button {
+        font-size: 10px;
+        font-weight: 400;
+        height: 20px;
+        width: 70px;
+    }
+    /* Fim das configurações de HTML no javascript no lista_categoria(Responsivo)*/
+
+/* Fim do Header */
+
+/* Inicio da Section Container Oferta */
 
     .container_oferta img {
         display: flex;
@@ -649,7 +788,9 @@ footer {
         width: 150px;
     }
 
-    /* Section slides */
+/* Inicio da Section Container Oferta */
+
+/* Inicio da Section container_lancamento*/
 
     .container_lancamento > h3 {
         font-size: 12px;
@@ -711,14 +852,16 @@ footer {
         top: 7px;
         width: 35px;
     }
+/* Fim da Section container_lancamento*/
+
+    
+/* Inicio da Configuração Swaiper*/
 
     .swiper {
         width: 80%; 
         height: 220px;
         position: relative; 
     }
-
-    /* Aumentar a área clicável das setas */
     .custom-button-prev, .custom-button-next {
         top: 55%;
     }
@@ -735,28 +878,34 @@ footer {
         width: 25px; /* Tamanho do ícone */
         height: auto;
     }
+
+/* Fim da Configuração Swaiper*/
   
-    /* Section container produto */
+/* Inicio da Section container produto */
 
     .produto > img {
-        height: 200px;
-        
+        height: 200px; 
     }
-    .container_produto > .produto {
-        margin-left: 40px;
+
+    .texto_produto {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .texto_produto span {
         width: 200px;
-        font-size: 7px;
+        font-size: 8px;
     }
 
     .texto_produto h2 {
         font-size: 15px;
-    
     }
 
-    /* section locali */
+/* Fim da Section container produto */
+
+/* Inicio da Section container_localizacao */
 
     .container_localizacao {
         height: 300px;
@@ -797,8 +946,9 @@ footer {
         bottom: 150px;
         height: 200px;
     }
+/* Fim da Section container_localizacao */
 
-    /* Section contato */
+/* Inicio da Section container_contato */
     
     .container_contato {
         height: 350px;
@@ -816,7 +966,9 @@ footer {
         font-size: 12px;
     }
 
-    /* container registrar */
+/* Fim da Section container_contato */
+
+/* Inicio da container_registrar */
 
     .container_formulario {
         height: 300px;
@@ -843,11 +995,12 @@ footer {
     .botao_cadastrar {
         font-size: 11px;
         width: 200px;
-        
     }
 
-    /* footer */
-    
+/* Fim da container_registrar */
+
+/* Inicio do footer */
+
     footer {
         gap: 20px;
         height: 400px;
@@ -871,7 +1024,6 @@ footer {
         margin-left: 10px;
         margin-top: 70px;
         gap: 25px;
-        
     }
 
     .container_cartao > img {
@@ -894,6 +1046,8 @@ footer {
     .container_patriocinio img {
         height: 15px;
     }
+
+/* Fim do footer */
     
 }
 
