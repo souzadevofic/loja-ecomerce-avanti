@@ -858,6 +858,7 @@ footer {
 /* Inicio da Section container produto */
 
     .container_produto {
+        
         flex-direction: column;
     }
     .produto > img {
@@ -872,7 +873,7 @@ footer {
     }
 
     .texto_produto span {
-        width: 220px;
+        width: 200px;
         font-size: 1.5vh;
     }
 
