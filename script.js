@@ -13,9 +13,9 @@ const swiper = new Swiper('.swiper', {
   },
 
   breakpoints: {
-    320: { slidesPerView: 2, spaceBetween: 50 }, // Para telas pequenas (celulares)
-    768: { slidesPerView: 3, spaceBetween: 5 }, // Para tablets
-    1024: { slidesPerView: 4, spaceBetween: 3}, // Para desktops
+    320: { slidesPerView: 2, spaceBetween: 70 }, 
+    768: { slidesPerView: 3, spaceBetween: 5 }, 
+    1024: { slidesPerView: 4, spaceBetween: 3}, 
   },
 });
 
@@ -69,10 +69,10 @@ function listarCategoria() {
   const categoria = document.querySelector('.container_categoria');
   if (!categoria) return;
 
-  let listaCategoria = null; // Definindo a variável para armazenar a lista
+  let listaCategoria = null; 
 
   categoria.addEventListener('click', (event) => {
-    event.stopPropagation(); // Evita que o clique se propague para o document
+    event.stopPropagation(); 
 
     if (!listaCategoria) {
       listaCategoria = document.createElement('div');
@@ -148,7 +148,6 @@ function listarCategoria() {
     }
   });
 
-  // Fechar a lista ao clicar fora
   document.addEventListener('click', (event) => {
     if (listaCategoria && !categoria.contains(event.target) && !listaCategoria.contains(event.target)) {
       listaCategoria.style.display = 'none';
@@ -156,7 +155,6 @@ function listarCategoria() {
   });
 }
 
-// Inicializa o evento após o carregamento da página
 document.addEventListener('DOMContentLoaded', listarCategoria);
 
 

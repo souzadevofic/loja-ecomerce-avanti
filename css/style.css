@@ -685,13 +685,13 @@ footer {
 
 /* Inicio do Header */
     .container_cupom_desconto {
-        font-size: 12px;
+        font-size: 1.5vh;
     }
 
     .cabecalho {
-        flex-direction: column;
-        
+        flex-direction: column;  
     }
+    
     .container_barra_pesquisa {
         flex-direction: column;
     }
@@ -701,16 +701,17 @@ footer {
     }
 
     .container_barra_pesquisa > input {
+        height: 35px;
         width: 300px;
-        font-size: 12px;
+        font-size: 1.5vh;
         background-size: 12px;
     }
 
     .container_busca_produto {
-        font-size: 9px;
+        font-size: 1.5vh;
         top: 130px;
-        left: 40px;
-        width: 290px;  
+        left: 30px;
+        width: 330px;  
       }
 
     .dados_usuario > .icone_usuario  {
@@ -728,12 +729,12 @@ footer {
         display: flex;
         align-items: center;
         text-align: center;
-        font-size: 10px;
+        font-size: 1.2vh
        
     }
 
     .container_navegacao {
-        font-size: 10px;
+        font-size: 1.5vh
         
     }
 
@@ -744,7 +745,7 @@ footer {
     /* Inicio das configurações de HTML no javascript no lista_categoria(Responsivo)*/
     .lista_categoria {
         top: 30px;
-        left: -50px; 
+        left: -30px; 
         height: 150px;
     }
     
@@ -761,11 +762,11 @@ footer {
     }
 
     .lista_departamentos {
-        gap: 5px;
+        gap: 30px;
     }
 
     .lista_departamentos li {
-        font-size: 10px;
+        font-size: 1.3vh;
         
     }
 
@@ -779,13 +780,13 @@ footer {
     }
 
     .container_texto_card  {
-        font-size: 12px;
+        font-size: 1.5vh;
         width: 100px;
         left: 1px;
     }
     
     .container_da_foto_card button {
-        font-size: 10px;
+        font-size: 1.5vh;
         font-weight: 400;
         height: 20px;
         width: 70px;
@@ -797,23 +798,22 @@ footer {
 /* Inicio da Section Container Oferta */
 
     .container_oferta img {
-        display: flex;
-        margin-top: 120px;
+        margin-top: 150px;
         height: 150px;
+        
     }
     .container_oferta {
-        height: 270px;
-        background-size: 300px;
-        background-position: calc(10% - 10px) center;
+        height: 300px;
+       
     }
 
     .titulo_oferta > span {
-        font-size: 20px;
+        font-size: 3vh;
         color: #020202;
     }
 
     .titulo_oferta > h3 {
-        font-size: 10px;
+        font-size: 1.5vh;
         width: 150px;
     }
 
@@ -822,94 +822,34 @@ footer {
 /* Inicio da Section container_lancamento*/
 
     .container_lancamento > h3 {
-        font-size: 20px;
+        font-size: 2vh;
         margin-top: 30px;
-        left: 30px;
+        left: 40px;
     }
-
-    /* .container_lancamento > h3 {
-        font-size: 12px;
-        margin-top: 30px;
-    }
-    
-    .imagem_modelo {
-        width: 70px;
-    }
-
-    .container_lancamento {
-        margin-top: 40px;
-        
-    }
-    
-    .container_lancamento > h3 {
-        position: absolute;
-        left: 50px;
-        top: -10px;
-    }
-    
-    .container_card {
-        height: 150px;
-        display: flex;
-        width: 100px;
-    }
-    
-    .container_card > h3 {
-        font-size: 0.9vh;
-        font-weight: 400;
-    }
-
-    .container_promo {
-        font-size: 0.9vh;
-        margin-left: 110px;
-        
-    
-    }
-    
-    .container_card > button {
-        position: absolute;
-        font-size: 0.9vh;
-        top: 130px;
-        width: 40px;
-        height: 15px;
-        border-radius: 4px;
-    }
-    
-    .container_card > a {
-        bottom: 30px;
-        left: 10px;
-        font-size: 0.9vh;
-        width: 35px;
-    }
-    
-    .container_card > span {
-        font-size: 0.9vh;
-        left: 3px;
-        top: 4px;
-        width: 30px;
-    } */
 /* Fim da Section container_lancamento*/
 
     
 /* Inicio da Configuração Swaiper*/
 
     .swiper {
-        width: 90%; 
+        width: 80%; 
         
     }
+
     .custom-button-prev, .custom-button-next {
         top: 50%;
     }
 
     .custom-button-prev {
-        left: 4px;  
+        left: 20px;  
     }
     
     .custom-button-next {
-        right: 4px; /* Ajuste conforme necessário */
+        right: 20px; 
     }
 
     .custom-button-prev img, .custom-button-next img {
-        width: 25px; /* Tamanho do ícone */
+        width: 25px; 
         height: auto;
     }
 
@@ -932,12 +872,12 @@ footer {
     }
 
     .texto_produto span {
-        width: 200px;
-        font-size: 1.1vh;
+        width: 220px;
+        font-size: 1.5vh;
     }
 
     .texto_produto h2 {
-        font-size: 1.vh;
+        font-size: 2.5vh;
     }
 
 /* Fim da Section container produto */
@@ -953,9 +893,9 @@ footer {
     justify-content: center;
     position: relative;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     display: flex;
-    width: 400px;
+    width: 200px;
 }
 
 .container_icone {
@@ -965,7 +905,6 @@ footer {
 }
 
 .cor_icone {
-    background-color: #005CFF;
     width: 40px;
     height: 40px;
 }
@@ -975,12 +914,12 @@ footer {
 } 
 
 .localizacao {
-    gap: 12px;
+    gap: 10px;
 
 }
 
 .localizacao span {
-    width: 240px;
+    width: 260px;
     font-size: 12px;
 }
 
@@ -1009,7 +948,7 @@ footer {
     }
     
     .infor_contato h2 {
-        font-size: 10px;
+        font-size: 1.3vh;
     }
 
 /* Fim da Section container_contato */
@@ -1018,16 +957,16 @@ footer {
 
     .container_formulario {
         height: 300px;
-        width: 250px;
+        width: 280px;
     }
     
     .container_registrar h3 {
-        font-size: 15px;
+        font-size: 2vh;
     }
     
     .form {
-        font-size: 9px;
-        width: 200px;
+        font-size: 1.5vh;
+        width: 230px;
     }
     
     .container_conteudo  {
@@ -1035,7 +974,7 @@ footer {
     }
     
     .container_conteudo span {
-        font-size: 9px;
+        font-size: 1.2vh;
     }
     
     .botao_cadastrar {
@@ -1053,12 +992,12 @@ footer {
     }
 
     .sobre h4 {
-        font-size: 12px;
+        font-size: 1.5vh;
         font-weight: 700;
     }
     
     .sobre h5 {
-        font-size: 10px;
+        font-size: 1.2vh;
     }
 
     .logo_rede_social img {
@@ -1083,8 +1022,8 @@ footer {
     }
 
     .container_patriocinio span {
-        font-size: 10px;
-        width: 250px;
+        font-size: 1.2vh;
+        width: 320px;
     }
 
     .container_patriocinio img {
