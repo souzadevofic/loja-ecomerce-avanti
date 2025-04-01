@@ -80,8 +80,8 @@ header {
 .cabecalho {
     display: flex;
     width: 100%;
-    gap: 200px;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .container_barra_pesquisa > input {
@@ -136,10 +136,10 @@ header {
 }
 
 .dados_usuario {
+    text-align: center;
     position: relative;
     display: flex;
-    gap: 10px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -168,9 +168,11 @@ header {
 }
 
 .container_navegacao > .lista_navegacao {
-    display: flex;
-    flex-direction: row;
     gap: 20px;
+    display: flex;
+    text-align: center;
+    
+    
     list-style-type: none
 }
 
@@ -178,13 +180,15 @@ header {
     position: relative;
     cursor: pointer;
     font-weight: 600;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    gap: 8px;
+    gap: 10px;
+    
+    
 }
 
-.conteiner_categoria img {
+.icone_hamburguer {
     height: 10px;
 }
 /* Fim do Header */
@@ -245,7 +249,7 @@ header {
 .container_lancamento > h3 {
     position: absolute;
     display: flex;
-    font-size: 30px;
+    font-size: 25px;
     left: 220px;
     top: -20px;
 }
@@ -313,7 +317,7 @@ header {
     border-radius: 5px;
 }
 
-/* Inicio da Section container_lancamento*/
+/* Fim da Section container_lancamento*/
 
 /* Inicio da Section container_produto */
 
@@ -393,7 +397,7 @@ header {
 
 .localizacao h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .localizacao span {
@@ -672,7 +676,11 @@ footer {
     }
 
     .cabecalho {
-        gap: 10px;
+        flex-direction: column;
+        
+    }
+    .container_barra_pesquisa {
+        flex-direction: column;
     }
 
     .container_barra_pesquisa > img {
@@ -680,16 +688,16 @@ footer {
     }
 
     .container_barra_pesquisa > input {
-        width: 200px;
+        width: 300px;
         font-size: 12px;
         background-size: 12px;
     }
 
     .container_busca_produto {
         font-size: 9px;
-        top: 80px;
-        left: 140px;
-        width: 195px;  
+        top: 130px;
+        left: 40px;
+        width: 290px;  
       }
 
     .dados_usuario > .icone_usuario  {
@@ -697,10 +705,13 @@ footer {
     }
 
     .dados_usuario {
-        gap: 2px;
+        right: 20px;
+        top: 40px;
+        position: absolute;
     }
 
     .dados_usuario > h3 {
+        width: 40px;
         display: flex;
         align-items: center;
         text-align: center;
@@ -713,14 +724,14 @@ footer {
         
     }
 
-    .lista_navegacao li:nth-child(n+6) { 
+    .lista_navegacao li:nth-child(n+4) { 
         display: none;
     }
 
     /* Inicio das configurações de HTML no javascript no lista_categoria(Responsivo)*/
     .lista_categoria {
         top: 30px;
-        left: -30px; 
+        left: -50px; 
         height: 150px;
     }
     
@@ -737,11 +748,16 @@ footer {
     }
 
     .lista_departamentos {
-        gap: 20px;
+        gap: 5px;
     }
 
     .lista_departamentos li {
         font-size: 10px;
+        
+    }
+
+    .lista_departamentos ul:nth-child(n+3){
+        display: none;
     }
 
     .foto_card img {
@@ -752,7 +768,7 @@ footer {
     .container_texto_card  {
         font-size: 12px;
         width: 100px;
-        left: 5px;
+        left: 1px;
     }
     
     .container_da_foto_card button {
@@ -813,44 +829,44 @@ footer {
     }
     
     .container_card {
-        height: 190px;
+        height: 150px;
         display: flex;
-        width: 125px;
+        width: 100px;
     }
     
     .container_card > h3 {
-        font-size: 9px;
+        font-size: 0.9vh;
         font-weight: 400;
     }
 
     .container_promo {
-        font-size: 9px;
-        margin-left: 90px;
-        width: 200px;
+        font-size: 0.9vh;
+        margin-left: 110px;
+        
     
     }
     
     .container_card > button {
-        font-size: 12px;
-        width: 100px;
-        height: 30px;
-        
-
+        position: absolute;
+        font-size: 0.9vh;
+        top: 130px;
+        width: 40px;
+        height: 15px;
+        border-radius: 4px;
     }
     
     .container_card > a {
-        width: 50px;
         bottom: 30px;
         left: 10px;
-        font-size: 9px;
-        width: 40px;
+        font-size: 0.9vh;
+        width: 35px;
     }
     
     .container_card > span {
-        font-size: 9px;
-        left: 8px;
-        top: 7px;
-        width: 35px;
+        font-size: 0.9vh;
+        left: 3px;
+        top: 4px;
+        width: 30px;
     }
 /* Fim da Section container_lancamento*/
 
@@ -859,15 +875,15 @@ footer {
 
     .swiper {
         width: 80%; 
-        height: 220px;
+        height: 190px;
         position: relative; 
     }
     .custom-button-prev, .custom-button-next {
-        top: 55%;
+        top: 50%;
     }
 
     .custom-button-prev {
-        left: 25px;  
+        left: 20px;  
     }
     
     .custom-button-next {
@@ -884,7 +900,7 @@ footer {
 /* Inicio da Section container produto */
 
     .produto > img {
-        height: 200px; 
+        height: 140px; 
     }
 
     .texto_produto {
@@ -896,7 +912,7 @@ footer {
 
     .texto_produto span {
         width: 200px;
-        font-size: 8px;
+        font-size: 0.8vh;
     }
 
     .texto_produto h2 {
@@ -913,38 +929,36 @@ footer {
     }
 
     .localizacao {
-        gap: 10px;
+        gap: 8px;
     }
 
     .localizacao span {
-        font-size: 9px;
+        font-size: 8px;
         width: 170px;
     
     }
 
     .localizacao h1 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .container_icones {
-        display: flex;
         flex-direction: column;
-        gap: 15px;
-        margin-top: 30px;
+        gap: 18px;
+        margin-top: 40px;
     }
 
     .cor_icone img {
-        height: 20px;
+        height: 15px;
     }
     
     .container_icones > .cor_icone {
-        height: 30px;
-        width: 30px;
+        height: 25px;
+        width: 25px;
     }
 
     .container_imagem_xicara_mesa img {
-        bottom: 150px;
-        height: 200px;
+        height: 140px;
     }
 /* Fim da Section container_localizacao */
 
@@ -963,7 +977,7 @@ footer {
     }
     
     .infor_contato h2 {
-        font-size: 12px;
+        font-size: 10px;
     }
 
 /* Fim da Section container_contato */
@@ -976,7 +990,7 @@ footer {
     }
     
     .container_registrar h3 {
-        font-size: 20px;
+        font-size: 15px;
     }
     
     .form {
@@ -1003,7 +1017,7 @@ footer {
 
     footer {
         gap: 20px;
-        height: 400px;
+        height: 800px;
     }
 
     .sobre h4 {
@@ -1021,13 +1035,15 @@ footer {
     }
 
     .container_sobre_nos {
-        margin-left: 10px;
-        margin-top: 70px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         gap: 25px;
     }
 
     .container_cartao > img {
-        height: 15px;
+        height: 12px;
     }
 
     .container_patriocinio {
@@ -1036,11 +1052,7 @@ footer {
 
     .container_patriocinio span {
         font-size: 10px;
-        width: 400px;
-    }
-
-    .sobre .horario {
-        width: 120px;
+        width: 250px;
     }
 
     .container_patriocinio img {
