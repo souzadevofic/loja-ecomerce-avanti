@@ -368,31 +368,44 @@ header {
 
 }
 
-.container_icones {
+.container_icone_texto {
+    position: relative;
+    align-items: center;
+    gap: 20px;
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 60px;
+    width: 600px;
+    
 }
 
-.container_icones > .cor_icone {
-    display: flex;
-    align-items: center;
+.container_icone {
+    margin-top: 50px;
     justify-content: center;
-    border-radius: 100px;
-    height: 60px;
-    width: 60px;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    display: flex;
+}
+
+.cor_icone {
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #005CFF;
+    width: 70px;
+    height: 70px;
 }
 
 .cor_icone img {
     height: 40px;
-}
+} 
 
 .localizacao {
-    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
     flex-direction: column;
-    gap: 20px;
+    display: flex;
 }
 
 .localizacao h1 {
@@ -809,6 +822,12 @@ footer {
 /* Inicio da Section container_lancamento*/
 
     .container_lancamento > h3 {
+        font-size: 20px;
+        margin-top: 30px;
+        left: 30px;
+    }
+
+    /* .container_lancamento > h3 {
         font-size: 12px;
         margin-top: 30px;
     }
@@ -867,27 +886,26 @@ footer {
         left: 3px;
         top: 4px;
         width: 30px;
-    }
+    } */
 /* Fim da Section container_lancamento*/
 
     
 /* Inicio da Configuração Swaiper*/
 
     .swiper {
-        width: 80%; 
-        height: 190px;
-        position: relative; 
+        width: 90%; 
+        
     }
     .custom-button-prev, .custom-button-next {
         top: 50%;
     }
 
     .custom-button-prev {
-        left: 20px;  
+        left: 4px;  
     }
     
     .custom-button-next {
-        right: 25px; /* Ajuste conforme necessário */
+        right: 4px; /* Ajuste conforme necessário */
     }
 
     .custom-button-prev img, .custom-button-next img {
@@ -899,67 +917,81 @@ footer {
   
 /* Inicio da Section container produto */
 
+    .container_produto {
+        flex-direction: column;
+    }
     .produto > img {
-        height: 140px; 
+        height: 230px; 
     }
 
     .texto_produto {
+        text-align: center;
         width: 200px;
-        display: flex;
         flex-direction: column;
         gap: 10px;
     }
 
     .texto_produto span {
         width: 200px;
-        font-size: 0.8vh;
+        font-size: 1.1vh;
     }
 
     .texto_produto h2 {
-        font-size: 15px;
+        font-size: 1.vh;
     }
 
 /* Fim da Section container produto */
 
 /* Inicio da Section container_localizacao */
 
-    .container_localizacao {
-        height: 300px;
-        
-    }
+.container_localizacao {
+    flex-direction: column;
 
-    .localizacao {
-        gap: 8px;
-    }
+}
 
-    .localizacao span {
-        font-size: 8px;
-        width: 170px;
-    
-    }
+.container_icone_texto {
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    width: 400px;
+}
 
-    .localizacao h1 {
-        font-size: 15px;
-    }
+.container_icone {
+    gap: 25px;
+    flex-direction: column;
 
-    .container_icones {
-        flex-direction: column;
-        gap: 18px;
-        margin-top: 40px;
-    }
+}
 
-    .cor_icone img {
-        height: 15px;
-    }
-    
-    .container_icones > .cor_icone {
-        height: 25px;
-        width: 25px;
-    }
+.cor_icone {
+    background-color: #005CFF;
+    width: 40px;
+    height: 40px;
+}
 
-    .container_imagem_xicara_mesa img {
-        height: 140px;
-    }
+.cor_icone img {
+    height: 20px;
+} 
+
+.localizacao {
+    gap: 12px;
+
+}
+
+.localizacao span {
+    width: 240px;
+    font-size: 12px;
+}
+
+.localizacao h1 {
+    font-size: 15px;
+}
+
+.container_imagem_xicara_mesa img {
+    height: 230px;
+}
+
 /* Fim da Section container_localizacao */
 
 /* Inicio da Section container_contato */

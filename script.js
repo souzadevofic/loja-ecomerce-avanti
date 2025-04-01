@@ -13,7 +13,7 @@ const swiper = new Swiper('.swiper', {
   },
 
   breakpoints: {
-    320: { slidesPerView: 3, spaceBetween: 4 }, // Para telas pequenas (celulares)
+    320: { slidesPerView: 2, spaceBetween: 50 }, // Para telas pequenas (celulares)
     768: { slidesPerView: 3, spaceBetween: 5 }, // Para tablets
     1024: { slidesPerView: 4, spaceBetween: 3}, // Para desktops
   },
