@@ -846,7 +846,7 @@ footer {
 
     .swiper {
         width: 80%; 
-        height: 420px;
+        height: 380px;
         
     }
 
@@ -902,17 +902,19 @@ footer {
 
 .container_localizacao {
     gap: 45px;
-    height: 180vw;
+    height: 200vw;
     flex-direction: column;
 
 }
 
 .container_icone_texto {
+    text-align:justify;
     justify-content: center;
 }
 
 .container_icone {
-    gap: 45px;
+    margin-top: 15vw;
+    gap: 20vw;
     flex-direction: column;
 }
 
@@ -928,7 +930,7 @@ footer {
     gap: 20px;
 }
 .localizacao span {
-    width: 70vw;
+    width: 65vw;
     font-size: 1em;
 }
 
