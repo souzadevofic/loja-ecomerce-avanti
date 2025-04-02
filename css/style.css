@@ -75,6 +75,7 @@ header {
 .container_cupom_desconto > span > strong {
     background-color: #6220C1;
     border-radius: 10px;
+    padding: 1px 5px;
 }
 
 .cabecalho {
@@ -114,11 +115,11 @@ header {
     align-items: center;
     justify-content: center;
     top: 7.5vw;
-    left: 25vw;
+    left: 26.5vw;
     position: absolute;
     background: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 32vw;
+    width: 30vw;
      
 }
 
@@ -198,7 +199,6 @@ header {
     justify-content: center;
     background-color: #E6E7E9;
     width: 100%;
-    height: 32vw;
 }
 
 .container_oferta img {
@@ -392,12 +392,12 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #005CFF;
-    width: 5vw;
-    height: 5vw;
+    width: 70px;
+    height: 70px;
 }
 
 .cor_icone img {
-    height: 3vw;
+    height: 4svb;
 } 
 
 .localizacao {
@@ -708,9 +708,14 @@ footer {
     .container_busca_produto {
         font-size: 0.8rem;
         top: 35vw;
-        left: 10vw;
+        left: 8vw;
         width: 80vw;  
-      }
+    }
+
+    .icone_lupa {
+        height: 5vw;
+    }
+
 
     .dados_usuario > .icone_usuario  {
         height: 3.5vw;
@@ -841,6 +846,7 @@ footer {
 
     .swiper {
         width: 80%; 
+        height: 420px;
         
     }
 
@@ -895,6 +901,7 @@ footer {
 /* Inicio da Section container_localizacao */
 
 .container_localizacao {
+    gap: 45px;
     height: 180vw;
     flex-direction: column;
 
@@ -905,21 +912,23 @@ footer {
 }
 
 .container_icone {
-    gap: 12vw;
+    gap: 45px;
     flex-direction: column;
 }
 
 .cor_icone {
-    width: 8vw;
-    height: 8vw;
+    width: 40px;
+    height: 40px;
 }
 
 .cor_icone img {
     height: 4vw;
 } 
-
+.localizacao {
+    gap: 20px;
+}
 .localizacao span {
-    width: 80vw;
+    width: 70vw;
     font-size: 1em;
 }
 
@@ -928,7 +937,7 @@ footer {
 }
 
 .container_imagem_xicara_mesa img {
-    height: 50vw;
+    height: 70vw;
 }
 
 /* Fim da Section container_localizacao */
@@ -942,7 +951,7 @@ footer {
     }
     
     .infor_contato {
-        height: 10vw;
+        height: 15vw;
         top: 35vw; 
     }
     
@@ -960,13 +969,13 @@ footer {
     }
     
     .container_registrar h3 {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     
     .form {
-        font-size: 1em;
+        font-size: 0.8em;
         width: 50vw;
-        height: 8vw;
+        height: 9vw;
     }
     
     .container_conteudo  {
@@ -980,7 +989,7 @@ footer {
     
     .botao_cadastrar {
         width: 50vw;
-        height: 8vw;
+        height: 9vw;
     }
 
 /* Fim da container_registrar */
@@ -1019,6 +1028,8 @@ footer {
     }
 
     .container_patriocinio {
+        height: 70vw;
+
         gap: 4vw;
     }
 
