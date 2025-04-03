@@ -571,8 +571,8 @@ footer {
 }
 
 .logo_rede_social img {
-    height: 1.3vw;
-    width: 10vw;
+    height: 1.5vw;
+    
 }
 
 .container_sobre_nos {
@@ -1074,7 +1074,7 @@ footer {
 
     footer {
         gap: 10vw;
-        height: 200vw;
+        height: 110vh;
     }
 
     .sobre h4 {
@@ -1087,8 +1087,8 @@ footer {
     }
 
     .logo_rede_social img {
-        height: 3vw;
-        width: 20vw;
+        height: 2.5vh;
+        
     }
 
     .container_sobre_nos {
@@ -1104,8 +1104,7 @@ footer {
     }
 
     .container_patriocinio {
-        height: 70vw;
-
+        height: 30vh;
         gap: 4vw;
     }
 
