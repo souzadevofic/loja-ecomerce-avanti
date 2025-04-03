@@ -74,7 +74,7 @@ header {
 
 .container_cupom_desconto > span > strong {
     background-color: #6220C1;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 1px 5px;
 }
 
@@ -185,9 +185,20 @@ header {
     gap: 10px;   
 }
 
+.lista_navegacao li:hover {
+    color: #005CFF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 .icone_hamburguer {
     height: 0.9vw;
 }
+
+.hamburguer_canvas {
+    display: none;
+}
+
 /* Fim do Header */
 
 /* Inicio Section container_oferta */
@@ -248,6 +259,7 @@ header {
     font-size: 2rem;
     left: 15vw;
     top: -1vw;
+    
 }
 
 .container_card {
@@ -262,7 +274,7 @@ header {
     align-items: center;
 }
 
-.container_card > h3 {
+.container_card  h3 {
     font-size: 0.8em;
     font-weight: 400;
 }
@@ -273,10 +285,13 @@ header {
     flex-direction: column;
     width: 20vh;
     text-align: left;
-
 }
 
-.container_card > button {
+.container_promo span:nth-child(1) {
+    text-decoration: line-through;
+}
+
+.container_card button {
     background-color: #005CFF;
     width: 20vh;
     height: 6vh;
@@ -284,6 +299,10 @@ header {
     color: #ffffff;
     font-weight: 700;
     border-radius: 8px;
+}
+
+.container_card button:hover {
+    background-color: #0a4ab1;
 }
 
 .container_card > a {
@@ -526,6 +545,10 @@ header {
     font-weight: 700;
 }
 
+.botao_cadastrar:hover {
+    background-color: #0a4ab1;
+}
+
 /* Fim da Section container_contato */
 
 /* Inicico do Footer */
@@ -539,8 +562,6 @@ footer {
     height: 50vw;
     flex-direction: column;
     gap: 5vw;
-    
-    
 }
 
 .logo_rede_social {
@@ -574,9 +595,7 @@ footer {
 }
 
 .container_cartao > img {
-    height: 1.5vw;
- 
-    
+    height: 1.5vw; 
 }
 
 .container_patriocinio {
@@ -587,7 +606,7 @@ footer {
     gap: 5vw;
     width: 100%;
     background-color: #FFFFFF;
-    height: 20vw;
+    height: 30vw;
 }
 
 .container_patriocinio span {
@@ -657,17 +676,24 @@ footer {
     border-radius: 10px;
     height: 300px;
     width: 250px;
+    filter: brightness(80%); 
 }
 
 .container_texto_card  {
     left: 20px;
+    top: 5vh;
     position: absolute;
     color: #f8fbff;
     font-size: 25px;
-    width: 150px;
+    justify-content: end;
+    text-align:left;
+    width: 120px;
 }
 
 .container_da_foto_card button {
+    position: absolute;
+    top: 32vh;
+    left: 3vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -697,7 +723,7 @@ footer {
     }
 
     .container_barra_pesquisa > img {
-        height: 4vw;
+        height: 2.5vh;
     }
 
     .container_barra_pesquisa > input {
@@ -716,19 +742,30 @@ footer {
         height: 5vw;
     }
 
-
-    .dados_usuario > .icone_usuario  {
-        height: 3.5vw;
-    }
-
-    /* colocar dentro do scrool */
-
+    /* Inicio Offcanvas */
     .dados_usuario {
         display: none;
-        right: 4vw;
-        top: 15vw;
-        position: absolute;
     }
+    .lista_navegacao li { 
+        display: none;
+    }
+
+    .lista_canvas ul {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        list-style-type: none
+    }
+
+    .lista_canvas li:hover {
+        border-radius: 5px;
+        color: #005CFF;
+        font-weight: 600;
+        cursor: pointer;
+        color: #005CFF;
+    }
+
 
     .dados_usuario > h3 {
         width: 10vw;
@@ -738,22 +775,50 @@ footer {
         font-size: 0.6rem;
     }
 
-    .container_navegacao {
-        font-size: 0.8rem;
-        
+    .offcanvas-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .hamburguer_canvas {
+        height: 2vh;
+        display:flex;
+        position: absolute;
+        top: 8vh;
+        left: 2vh;
     }
 
-    .dados_usuario span {
-        top: -0.5vw;
-        font-size: 0.5rem;
-        width: 2vw;
-        
+    .icones-canvas {
+        position: absolute;
+        left: 38vh;
     }
 
-    /* Fazwer um scrool */
-    .lista_navegacao li { 
-        display: none;
+    .icones-canvas img {
+        height: 2.5vh;
     }
+
+    .icones-canvas span {
+        color: #f0f0f0;
+        border-radius: 10px;
+        width: 2.4vh;
+        font-size: 0.6em;
+        left: 1.5vh;
+    }
+
+    .usuario_canvas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+        
+    }
+    .icones-canvas span {
+        position: absolute;
+        background-color: #005CFF;
+    }
+
+    /* Inicio Offcanvas */
 
     /* Inicio das configurações de HTML no javascript no lista_categoria(Responsivo)*/
     .lista_categoria {
@@ -910,6 +975,7 @@ footer {
 .container_icone_texto {
     text-align:justify;
     justify-content: center;
+    
 }
 
 .container_icone {

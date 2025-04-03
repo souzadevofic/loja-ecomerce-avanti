@@ -136,8 +136,8 @@ function listarCategoria() {
 
             <div class="container_texto_card">
               <span>Confira os Produtos Que acabaram De chegar</span>
+              </div>
               <button>Ver Todos</button>
-            </div>
           </div>
         </div>
       `;
