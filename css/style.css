@@ -802,6 +802,10 @@ footer {
         height: 2.5vh;
     }
 
+    .usuario_canvas img {
+        height: 2.5vh;
+    }
+
     .icones-canvas span {
         color: #f0f0f0;
         border-radius: 10px;
