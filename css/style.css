@@ -750,11 +750,15 @@ footer {
         display: none;
     }
 
+    #offcanvasScrolling {
+        width: 40vh; /* Ajuste para o tamanho desejado */
+    }
+
     .lista_canvas ul {
+        margin-top: 2vh;
         gap: 20px;
         display: flex;
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column;       
         list-style-type: none
     }
 
@@ -782,7 +786,7 @@ footer {
         text-align: center;
     }
     .hamburguer_canvas {
-        height: 2vh;
+        height: 2.5vh;
         display:flex;
         position: absolute;
         top: 8vh;
@@ -791,7 +795,7 @@ footer {
 
     .icones-canvas {
         position: absolute;
-        left: 38vh;
+        left: 28vh;
     }
 
     .icones-canvas img {
