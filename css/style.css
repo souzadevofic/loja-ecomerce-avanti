@@ -91,7 +91,7 @@ header {
     background-position: calc(100% - 10px) center;
     border-radius: 10px;
     border: 1px solid rgb(207, 207, 207); 
-    height: 3em;
+    height: 6vh;
     width: 30vw;
     padding-left: 2vh;
     outline: none; 
@@ -228,12 +228,12 @@ header {
 }
 
 .titulo_oferta > span {
-    font-size: 4rem;
+    font-size: 4em;
     color: #020202;
 }
 
 .titulo_oferta > h3 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     width: 30vw;
     color: #005CFF;
 }
@@ -259,7 +259,6 @@ header {
     font-size: 2rem;
     left: 15vw;
     top: -1vw;
-    
 }
 
 .container_card {
@@ -447,7 +446,7 @@ header {
     max-width: 100%;
     position: relative;
     margin-top: 4vw;
-    background-image: url('../assets/imagem_escritorio.png');
+    background-image: url('../assets/imagem_escritorio.svg');
     background-repeat: no-repeat;
     background-size: cover; /* Faz a imagem cobrir o container */
     background-position: center; /* Centraliza a imagem */
@@ -624,6 +623,15 @@ footer {
 
 
 /* Inicio das configurações de HTML no javascript no lista_categoria*/
+.container_listas {
+    position: relative;
+    height: 42vh;
+    width: 150vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 160px;
+}
+
 .lista_categoria {
     position: absolute;
     top: 40px;
@@ -631,14 +639,8 @@ footer {
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
 }
 
-.container_listas {
-    display: flex;
-    justify-content: space-between;
-    gap: 160px;
-}
 
 .container_listas .lista_departamentos:first-child {
     background-color: #F5F5F5;
@@ -674,9 +676,9 @@ footer {
 
 .foto_card img {
     border-radius: 10px;
-    height: 300px;
-    width: 250px;
+    height: 40vh;
     filter: brightness(80%); 
+    margin-right: 30vh; 
 }
 
 .container_texto_card  {
@@ -701,16 +703,48 @@ footer {
     color: #F5F5F5;
     font-weight: 900;
     border-color: #F5F5F5;
+    border-width: 1px;
     border-radius: 8px;
     background-color: transparent;
     height: 40px;
     width: 120px;
 }
 
+.container_da_foto_card button:hover {
+    background-color: #ffffff;
+    color: #020202;
+}
+
 /* Fim das configurações de HTML no javascript no lista_categoria*/
 
 /* Responsividade (Mobile) */
 @media (max-width: 768px) {
+
+/* Inicio da Configuração Swaiper*/
+
+.swiper {
+    width: 80%; 
+    height: 380px;
+    
+}
+
+.custom-button-prev, .custom-button-next {
+    top: 50%;
+}
+
+.custom-button-prev {
+    left: 20px;  
+}
+
+.custom-button-next {
+    right: 20px; 
+}
+
+.custom-button-prev img, .custom-button-next img {
+    height: auto;
+}
+
+/* Fim da Configuração Swaiper*/
 
 /* Inicio do Header */
 
@@ -728,6 +762,7 @@ footer {
 
     .container_barra_pesquisa > input {
         width: 80vw;
+        height: 5vh;
         font-size: 0.8em;
     }
 
@@ -826,7 +861,7 @@ footer {
         background-color: #005CFF;
     }
 
-    /* Inicio Offcanvas */
+    /* Fim Offcanvas */
 
     /* Inicio das configurações de HTML no javascript no lista_categoria(Responsivo)*/
     .lista_categoria {
@@ -914,33 +949,6 @@ footer {
     }
 /* Fim da Section container_lancamento*/
 
-    
-/* Inicio da Configuração Swaiper*/
-
-    .swiper {
-        width: 80%; 
-        height: 380px;
-        
-    }
-
-    .custom-button-prev, .custom-button-next {
-        top: 50%;
-    }
-
-    .custom-button-prev {
-        left: 20px;  
-    }
-    
-    .custom-button-next {
-        right: 20px; 
-    }
-
-    .custom-button-prev img, .custom-button-next img {
-        width: 25px; 
-        height: auto;
-    }
-
-/* Fim da Configuração Swaiper*/
   
 /* Inicio da Section container produto */
 
@@ -1041,7 +1049,7 @@ footer {
 
     .container_formulario {
         height: 70vw;
-        width: 60vw;
+        width: 70vw;
     }
     
     .container_registrar h3 {
@@ -1050,7 +1058,8 @@ footer {
     
     .form {
         font-size: 0.8em;
-        width: 50vw;
+        width: 30vh;
+        padding-left: 10px;
         height: 9vw;
     }
     
@@ -1059,12 +1068,12 @@ footer {
     }
     
     .container_conteudo span {
-        width: 45vw;
+        width: 30vh;
         font-size: 0.8em;
     }
     
     .botao_cadastrar {
-        width: 50vw;
+        width: 30vh;
         height: 9vw;
     }
 

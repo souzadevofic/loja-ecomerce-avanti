@@ -131,7 +131,7 @@ function listarCategoria() {
 
           <div class="container_da_foto_card">
             <div class="foto_card">
-              <img src="./assets/imagem_xicara_localiza.png" alt="Produtos Novos" class="imagem_categoria">
+              <img src="./assets/imagem_xicara_localiza.svg" alt="Produtos Novos" class="imagem_categoria">
             </div>
 
             <div class="container_texto_card">
