@@ -21,5 +21,26 @@ Loja de E-commerce de roupas e acessórios da Avanti
 
 - **Bootstrap**:  framework de código aberto e gratuito para desenvolvimento web para trabalhar com responosividade.
 
-  ## Imagens da aplicação Web e Mobile
+## Imagens da aplicação Web e Mobile
+
+<h3 align="center">Versão Web</h3>
+<p align="center">
+  <img src="./assets/capa_web.png" alt="Versão Web" width="90%">
+</p>
+
+<h3 align="center">Versão Mobile</h3>
+<p align="center">
+  <img src="./assets/capa_mobile.jpg" alt="Versão Mobile" width="40%">
+</p>
+
+
+
+
+
+
+
+
+
+
+
   
