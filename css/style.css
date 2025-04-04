@@ -199,6 +199,100 @@ header {
     display: none;
 }
 
+/* Inicio das configurações de HTML no javascript no lista_categoria*/
+.container_listas {
+    position: relative;
+    height: 42vh;
+    width: 150vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 160px;
+}
+
+.lista_categoria {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.container_listas .lista_departamentos:first-child {
+    background-color: #F5F5F5;
+    width: 200px;
+}
+
+.lista_departamentos {
+    display: flex;
+    gap: 50px;
+}
+
+.lista_departamentos ul {
+    list-style: none;
+}
+
+.lista_departamentos li {
+    font-size: 14px;
+    color: #000000;
+    padding: 5px;
+   
+}
+
+.container_listas .texto_lista {
+    color: #005CFF;
+}
+
+.container_da_foto_card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto_card img {
+    border-radius: 10px;
+    height: 40vh;
+    filter: brightness(80%); 
+    margin-right: 30vh; 
+}
+
+.container_texto_card  {
+    left: 20px;
+    top: 5vh;
+    position: absolute;
+    color: #f8fbff;
+    font-size: 25px;
+    justify-content: end;
+    text-align:left;
+    width: 120px;
+}
+
+.container_da_foto_card button {
+    position: absolute;
+    top: 32vh;
+    left: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #F5F5F5;
+    font-weight: 900;
+    border-color: #F5F5F5;
+    border-width: 1px;
+    border-radius: 8px;
+    background-color: transparent;
+    height: 40px;
+    width: 120px;
+}
+
+.container_da_foto_card button:hover {
+    background-color: #ffffff;
+    color: #020202;
+}
+/* Fim das configurações de HTML no javascript no lista_categoria*/
+
 /* Fim do Header */
 
 /* Inicio Section container_oferta */
@@ -620,100 +714,6 @@ footer {
 }
 
 /* Fim do Footer */
-
-
-/* Inicio das configurações de HTML no javascript no lista_categoria*/
-.container_listas {
-    position: relative;
-    height: 42vh;
-    width: 150vh;
-    display: flex;
-    justify-content: space-between;
-    gap: 160px;
-}
-
-.lista_categoria {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-.container_listas .lista_departamentos:first-child {
-    background-color: #F5F5F5;
-    width: 200px;
-}
-
-.lista_departamentos {
-    display: flex;
-    gap: 50px;
-}
-
-.lista_departamentos ul {
-    list-style: none;
-}
-
-.lista_departamentos li {
-    font-size: 14px;
-    color: #000000;
-    padding: 5px;
-   
-}
-
-.container_listas .texto_lista {
-    color: #005CFF;
-}
-
-.container_da_foto_card {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.foto_card img {
-    border-radius: 10px;
-    height: 40vh;
-    filter: brightness(80%); 
-    margin-right: 30vh; 
-}
-
-.container_texto_card  {
-    left: 20px;
-    top: 5vh;
-    position: absolute;
-    color: #f8fbff;
-    font-size: 25px;
-    justify-content: end;
-    text-align:left;
-    width: 120px;
-}
-
-.container_da_foto_card button {
-    position: absolute;
-    top: 32vh;
-    left: 3vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    color: #F5F5F5;
-    font-weight: 900;
-    border-color: #F5F5F5;
-    border-width: 1px;
-    border-radius: 8px;
-    background-color: transparent;
-    height: 40px;
-    width: 120px;
-}
-
-.container_da_foto_card button:hover {
-    background-color: #ffffff;
-    color: #020202;
-}
 
 /* Fim das configurações de HTML no javascript no lista_categoria*/
 
