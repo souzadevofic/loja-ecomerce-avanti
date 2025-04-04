@@ -33,15 +33,15 @@ html {
 }
 
 .custom-button-prev {
-    left: 180px; /* Ajuste conforme necessário */  
+    left: 180px; 
 }
 
 .custom-button-next {
-    right: 250px; /* Ajuste conforme necessário */
+    right: 250px; 
 }
 
 .custom-button-prev img, .custom-button-next img {
-    width: 40px; /* Tamanho do ícone */
+    width: 40px; 
     height: auto;
 }
 
@@ -542,8 +542,8 @@ header {
     margin-top: 4vw;
     background-image: url('../assets/imagem_escritorio.svg');
     background-repeat: no-repeat;
-    background-size: cover; /* Faz a imagem cobrir o container */
-    background-position: center; /* Centraliza a imagem */
+    background-size: cover; 
+    background-position: center; 
     height: 50vw;
     margin-bottom: 4vw;
 }
@@ -786,7 +786,7 @@ footer {
     }
 
     #offcanvasScrolling {
-        width: 40vh; /* Ajuste para o tamanho desejado */
+        width: 40vh; 
     }
 
     .lista_canvas ul {
@@ -820,6 +820,7 @@ footer {
         justify-content: center;
         text-align: center;
     }
+
     .hamburguer_canvas {
         height: 2.5vh;
         display:flex;
@@ -856,6 +857,7 @@ footer {
         gap: 1vh;
         
     }
+
     .icones-canvas span {
         position: absolute;
         background-color: #005CFF;
@@ -923,6 +925,7 @@ footer {
         height: 38vw;
         
     }
+    
     .container_oferta {
         height: 76vw;
        
