@@ -8,7 +8,6 @@
 
 html {
     font-family: 'Poppins', sans-serif;
-    /* Torna suave o movimento do scroll */
     scroll-behavior: smooth;
 }
 
@@ -18,9 +17,9 @@ html {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    width: 70%; /* Ajusta para ocupar toda a largura */
+    width: 70%; 
     height: 380px;
-    position: relative; /* Importante para posicionar as setas */
+    position: relative; 
     
 }
 
@@ -47,7 +46,6 @@ html {
 
 /* Fim da Configuração Swipper */
 
-
 /* Inicio do Header */
 
 header {
@@ -68,8 +66,7 @@ header {
     background-color: #005CFF;
     width: 100%;
     text-align: center;
-    color: #ffffff;
-    
+    color: #ffffff;    
 }
 
 .container_cupom_desconto > span > strong {
