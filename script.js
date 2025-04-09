@@ -11,12 +11,6 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.custom-button-next',
       prevEl: '.custom-button-prev',
   },
-
-  breakpoints: {
-    320: { slidesPerView: 2, spaceBetween: 120 }, 
-    768: { slidesPerView: 3, spaceBetween: 5 }, 
-    1024: { slidesPerView: 4, spaceBetween: 3}, 
-  },
 });
 
 let produtos = [
@@ -63,10 +57,8 @@ function inicializarBuscaProduto() {
 }
 inicializarBuscaProduto();
 
-
-
 function listarCategoria() {
-  const categoria = document.querySelector('.container_categoria');
+  const categoria = document.querySelector('.container_navegacao');
   if (!categoria) return;
 
   let listaCategoria = null; 
@@ -83,14 +75,18 @@ function listarCategoria() {
         <div class="container_listas">
           <div class="lista_departamentos">
             <ul>
-              <li class="texto_lista">Departamento</li>
-              <li>Departamento</li>
-              <li>Departamento</li>
-              <li>Departamento</li>
-              <li>Departamento</li>
-              <li>Departamento</li>
-              <li>Departamento</li>
-              <li>Departamento</li>
+              <li class="texto_lista">Departamento <span> > </span></li>
+              <li>Departamento <span> > </span> </li>
+              <li>Departamento <span> > </span> </li>
+              <li>Departamento <span> > </span> </li>
+              <li>Departamento <span> > </span> </li>
+              <li>Departamento <span> > </span> </li>
+              <li>Departamento <span> > </span> </li>
+              <li>Departamento <span> > </span> </li>
+              <li>Departamento <span> > </span> </li>
+              <li>Departamento <span> > </span> </li>
+              <li>Departamento <span> > </span> </li>
+              <li>Departamento <span> > </span> </li>
             </ul>
           </div>
 
@@ -138,6 +134,7 @@ function listarCategoria() {
               <span>Confira os Produtos Que acabaram De chegar</span>
               </div>
               <button>Ver Todos</button>
+            </div>
           </div>
         </div>
       `;
