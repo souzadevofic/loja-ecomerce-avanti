@@ -23,7 +23,7 @@ Loja de E-commerce de roupas e acessórios da Avanti
 
 ## Imagens da aplicação Web e Mobile
 
-<h3 align="center">Versão Web</h3>
+<h3 align="center">Versão Desktop</h3>
 <p align="center">
   <img src="./assets/capa_web.png" alt="Versão Web" width="90%">
 </p>
