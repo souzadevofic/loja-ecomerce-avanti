@@ -951,8 +951,8 @@ footer {
 /* Inicio da Section container_lancamento*/
 
     .container_lancamento > h3 {
-        font-size: 1.3em;
-        margin-left: 15vh
+        font-size: 2em;
+        margin-left: 12vh
     }
 
     .container_card:nth-child(n+2) {
