@@ -781,7 +781,7 @@ footer {
     }
 
     #offcanvasScrolling {
-        width: 40vh; 
+        width: 300px; 
     }
 
     .lista_canvas ul {
@@ -806,7 +806,7 @@ footer {
         display: flex;
         align-items: center;
         text-align: center;
-        font-size: 0.6rem;
+        font-size: 0.6em;
     }
 
     .offcanvas-header{
@@ -817,39 +817,39 @@ footer {
     }
 
     .hamburguer_canvas {
-        height: 2.5vh;
+        height: 20px;
         display:flex;
         position: absolute;
-        top: 8vh;
-        left: 2vh;
+        top: 65px;
+        left: 15px;
     }
 
     .icones-canvas {
         position: absolute;
-        left: 28vh;
+        left: 200px;
     }
 
     .icones-canvas img {
-        height: 2.5vh;
+        height: 20px;
     }
 
     .usuario_canvas img {
-        height: 2.5vh;
+        height: 20px;
     }
 
     .icones-canvas span {
         color: #f0f0f0;
         border-radius: 10px;
-        width: 2.4vh;
+        width: 15px;
         font-size: 0.6em;
-        left: 1.5vh;
+        left: 15px;
     }
 
     .usuario_canvas {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1vh;
+        gap: 10px;
         
     }
 
