@@ -151,7 +151,7 @@ header {
 }
 
 .dados_usuario > h3 {
-    font-size: 1rem;
+    font-size: 1em;
     width: 5vw;
     height: 2.6vw;
 }
@@ -451,11 +451,11 @@ header {
 }
 
 .produto > img {
-    height: 30vw;
+    height: 500px;
 }
 
 .texto_produto {
-    width: 35vw;
+    width: 500px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -463,12 +463,12 @@ header {
 }
 
 .texto_produto h2 {
-    font-size: 2rem;
+    font-size: 2em;
 
 }
 
 .texto_produto span {
-    font-size: 1.1rem;
+    font-size: 1.1em;
 
 }
 
@@ -479,7 +479,7 @@ header {
 .container_localizacao {
     margin-top: 8vw;
     position: relative;
-    height: 35vw;
+    height: 600px;
     background-color: #DEDEDE;
     display: flex;
     align-items: center;
@@ -491,16 +491,15 @@ header {
 .container_icone_texto {
     position: relative;
     align-items: center;
-    gap: 2vw;
+    gap: 20px;
     display: flex;
-    width: 38vw;
 }
 
 .container_icone {
     margin-top: 5vw;
     justify-content: center;
     align-items: center;
-    gap: 2.5vw;
+    gap: 35px;
     flex-direction: column;
     display: flex;
 }
@@ -516,28 +515,28 @@ header {
 }
 
 .cor_icone img {
-    height: 4svb;
+    height: 40px;
 } 
 
 .localizacao {
     justify-content: center;
     align-items: center;
-    gap: 3vw;
+    gap: 40px;
     flex-direction: column;
     display: flex;
 }
 
 .localizacao h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 .localizacao span {
-    width: 28vw;
+    width: 350px;
 }
 
 .container_imagem_xicara_mesa img {
-    height: 30vw;
+    height: 450px;
 }
 
 /* Fim Section da container_localizacao */
@@ -568,7 +567,7 @@ header {
 }
 
 .infor_contato h2 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 /* Fim da Section escritorio*/
@@ -580,7 +579,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 4vw;
+    gap: 40px;
 }
 
 .container_registrar h3 {
@@ -609,7 +608,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3vh;
+    gap: 10px;
 }
 
 .container_conteudo span {
@@ -621,24 +620,22 @@ header {
     border: 1px solid rgb(207, 207, 207); 
     outline: none;
     border-radius: 8px;
-    height: 3vw;
-    width: 18vw;
-    
-    
+    height: 40px;
+    width: 250px;  
 }
 
 .conferir_checkbox {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1vw;
+    gap: 10px;
 }
 
 .botao_cadastrar {
     background-color: #005CFF;
     border: none;
-    height: 2.5vw;
-    width: 7vw;
+    height: 40px;
+    width: 100px;
     border-radius: 8px;
     color: #ffffff;
     font-weight: 700;
@@ -755,7 +752,7 @@ footer {
     }
 
     .container_barra_pesquisa > img {
-        height: 2.5vh;
+        height: 20px;
     }
 
     .container_barra_pesquisa > input {
@@ -911,11 +908,11 @@ footer {
         flex-direction: column;
     }
     .produto > img {
-        height: 60vw; 
+        height: 250px; 
     }
 
     .texto_produto {
-        width: 60vw;
+        width: 250px;
         flex-direction: column;
        
     }
@@ -934,7 +931,7 @@ footer {
 
 .container_localizacao {
     gap: 45px;
-    height: 200vw;
+    height: 800px;
     flex-direction: column;
 
 }
@@ -947,7 +944,7 @@ footer {
 
 .container_icone {
     margin-top: 15vw;
-    gap: 20vw;
+    gap: 80px;
     flex-direction: column;
 }
 
@@ -957,13 +954,14 @@ footer {
 }
 
 .cor_icone img {
-    height: 4vw;
+    height: 25px;
 } 
+
 .localizacao {
     gap: 20px;
 }
 .localizacao span {
-    width: 65vw;
+    width: 260px;
     font-size: 1em;
 }
 
@@ -972,7 +970,7 @@ footer {
 }
 
 .container_imagem_xicara_mesa img {
-    height: 70vw;
+    height: 300px;
 }
 
 /* Fim da Section container_localizacao */
@@ -986,8 +984,8 @@ footer {
     }
     
     .infor_contato {
-        height: 15vw;
-        top: 35vw; 
+        height: 70px;
+        top: 150px; 
     }
     
     .infor_contato h2 {
@@ -999,8 +997,8 @@ footer {
 /* Inicio da container_registrar */
 
     .container_formulario {
-        height: 70vw;
-        width: 70vw;
+        height: 300px;
+        width: 300px;
     }
     
     .container_registrar h3 {
@@ -1009,9 +1007,7 @@ footer {
     
     .form {
         font-size: 0.8em;
-        width: 30vh;
         padding-left: 10px;
-        height: 9vw;
     }
     
     .container_conteudo  {
@@ -1019,13 +1015,12 @@ footer {
     }
     
     .container_conteudo span {
-        width: 30vh;
+        width: 220px;
         font-size: 0.8em;
     }
     
     .botao_cadastrar {
-        width: 30vh;
-        height: 9vw;
+        width: 240px;
     }
 
 /* Fim da container_registrar */
