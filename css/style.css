@@ -730,10 +730,9 @@ footer {
 
 /* Inicio da Configuração Swaiper*/
 
-.swiper {
-    width: 25vh; 
-    height: 50vh;
-}
+/* .swiper {
+    
+} */
 
 .custom-button-prev, .custom-button-next {
     top: 50%;
