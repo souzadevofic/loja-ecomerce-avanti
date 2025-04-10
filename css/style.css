@@ -655,26 +655,26 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: #F5F5F5;
-    height: 50vw;
+    height: 800px;
     flex-direction: column;
-    gap: 5vw;
+    gap: 100px;
 }
 
 .logo_rede_social {
     display: flex;
     flex-direction: column;
-    gap: 2vw;
+    gap: 10px;
 }
 
 .logo_rede_social img {
-    height: 1.5vw;
+    height: 25px;
     
 }
 
 .container_sobre_nos {
     display: flex;
-    gap: 8vw;
-    margin-top: 5vw;
+    gap: 80px;
+    margin-top: 100px;
 }
 
 .sobre h4 {
@@ -687,11 +687,11 @@ footer {
 }
 
 .sobre .horario {
-    width: 15vw;
+    width: 200px;
 }
 
 .container_cartao > img {
-    height: 1.5vw; 
+    height: 25px; 
 }
 
 .container_patriocinio {
@@ -702,18 +702,18 @@ footer {
     gap: 5vw;
     width: 100%;
     background-color: #FFFFFF;
-    height: 30vw;
+    height: 300px;
 }
 
 .container_patriocinio span {
     font-size: 1em;
     display: flex;
     text-align: center;
-    width: 70vw;
+    width: 800px;
 }
 
 .container_patriocinio img {
-    height: 2vw;
+    height: 30px;
 }
 
 /* Fim do Footer */
@@ -1028,8 +1028,8 @@ footer {
 /* Inicio do footer */
 
     footer {
-        gap: 10vw;
-        height: 110vh;
+        gap: 80px;
+        height: 900px;
     }
 
     .sobre h4 {
@@ -1042,8 +1042,7 @@ footer {
     }
 
     .logo_rede_social img {
-        height: 2.5vh;
-        
+        height: 20px;  
     }
 
     .container_sobre_nos {
@@ -1051,29 +1050,25 @@ footer {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 8vw;
+        gap: 40px;
     }
 
     .container_cartao > img {
-        height: 3vw;
+        height: 12px;
     }
 
     .container_patriocinio {
-        height: 30vh;
-        gap: 4vw;
+        height: 800px;
+        gap: 20px;
     }
 
     .container_patriocinio span {
         font-size: 0.7em;
-        width: 80vw;
-    }
-
-    .sobre .horario {
-        width: 50vw;
+        width: 300px;
     }
 
     .container_patriocinio img {
-        height: 15px;
+        height: 20px;
     }
 
 /* Fim do footer */
