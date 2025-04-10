@@ -14,8 +14,8 @@ html {
 .swiper {
     position: relative;
     width: 90%;
-    height: 50vh;
-    margin: 5vh auto;
+    height: 400px;
+    margin: 50px auto;
   }
 
 .swiper-slide {
@@ -25,17 +25,17 @@ html {
 
 .custom-button-prev, .custom-button-next {
     position: absolute;
-    top: 50%;
+    top: 55%;
     cursor: pointer;
     z-index: 1;
 }
   
 .custom-button-prev {
-    left: 20vh;
+    left: 140px;
 }
   
 .custom-button-next {
-    right: 20vh;
+    right: 145px;
 }
 
 /* Fim da Configuração Swipper */
@@ -82,9 +82,9 @@ header {
     background-position: calc(100% - 10px) center;
     border-radius: 10px;
     border: 1px solid rgb(207, 207, 207); 
-    height: 6vh;
-    width: 30vw;
-    padding-left: 2vh;
+    height: 45px;
+    width: 420px;
+    padding-left: 10px;
     outline: none; 
 }
 
@@ -345,33 +345,34 @@ header {
 
 /* Inicio da Section container_lancamento*/
 
-.container_lancamento > h3 {
-    display: flex;
-    font-size: 2rem;
-    margin-left: 20vh; 
-}
-
 .container_lancamento {
     position: relative;
-    margin-top: 10vh;  
+    margin-top: 100px;  
+}
+
+.container_lancamento > h3 {
+    display: flex;
+    font-size: 2em;
+    margin-left: 150px; 
 }
 
 .card-group {
+    min-height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3vh; 
+    gap: 20px; 
 }
 
 .imagem_modelo {
-    height: 50%;
+    height: 180px;
 }
 
 .container_card {
     position: relative;
-    height: 42vh;
     display: flex;
-    width: 25vh;
+    min-height: 350px;
+    min-width: 190px;
     border: solid 1px rgb(207, 207, 207);
     border-radius: 8px;
     text-align: center;
@@ -381,6 +382,7 @@ header {
 
 .container_card  h3 {
     font-size: 0.8em;
+    width: 200px;
     font-weight: 400;
 }
 
@@ -388,7 +390,7 @@ header {
     font-size: 0.8em;
     display: flex;
     flex-direction: column;
-    width: 20vh;
+    width: 150px;
     text-align: left;
 }
 
@@ -398,8 +400,8 @@ header {
 
 .container_card button {
     background-color: #005CFF;
-    width: 20vh;
-    height: 6vh;
+    width: 170px;
+    height: 50px;
     border: none;
     color: #ffffff;
     font-weight: 700;
@@ -414,20 +416,20 @@ header {
     position: absolute;
     display: flex;
     background-color: #5EC0BE;
-    width: 8vh;
+    width: 60px;
     color: #ffffff;
     text-align: center;
     align-items: center;
     justify-content: center;
-    left: 12vh;
+    left: 90px;
     border-radius: 5px;
 }
 
 .container_card > span {
     font-size: 0.8em;
     position: absolute;
-    left: 2vh;
-    top: 2vh;
+    left: 10px;
+    top: 20px;
     background-color: #00264E;
     color: #ffffff;
     width: 4em;
@@ -766,8 +768,8 @@ footer {
     }
 
     .container_barra_pesquisa > input {
-        width: 80vw;
-        height: 5vh;
+        width: 300px;
+        height: 40px;
         font-size: 0.8em;
     }
 
@@ -952,7 +954,7 @@ footer {
 
     .container_lancamento > h3 {
         font-size: 2em;
-        margin-left: 12vh
+        margin-left: 90px;
     }
 
     .container_card:nth-child(n+2) {
