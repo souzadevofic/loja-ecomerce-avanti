@@ -139,8 +139,8 @@ header {
 }
 
 .dados_usuario span {
-    top: -4px;
-    right: -5px;
+    top: 4px;
+    right: -8px;
     position: absolute;
     font-size: 0.7em;
     border-radius: 80px;
@@ -153,11 +153,13 @@ header {
 }
 
 .dados_usuario > h3 {
-    font-size: 1em;
+    font-size: 0.9em;
+    width: 80px;
+    text-align: left;
 }
 
 .dados_usuario > .icone_usuario {
-    height: 20px;
+    height: 23px;
 }
 
 .container_navegacao > .lista_navegacao {
