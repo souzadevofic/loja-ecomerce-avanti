@@ -868,7 +868,7 @@ footer {
     }
     
     .container_oferta {
-        height: 76vw;
+        height: 85vw;
        
     }
 
@@ -879,7 +879,7 @@ footer {
 
     .titulo_oferta > h3 {
         font-size: 1em;
-        width: 30vw;
+        width: 100px;
     }
 
 /* Inicio da Section Container Oferta */
