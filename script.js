@@ -23,10 +23,12 @@ let produtos = [
 
 function inicializarBuscaProduto() {
   const inputBuscar = document.querySelector('.buscar_produto');
+  const containerInput = inputBuscar.closest('.container_input_buscar');
+  
   const containerBusca = document.createElement('div');
   containerBusca.classList.add('container_busca_produto');
   containerBusca.style.display = 'none'; 
-  inputBuscar.parentNode.appendChild(containerBusca);
+  containerInput.appendChild(containerBusca);
 
   inputBuscar.addEventListener('input', () => {
     const termo = inputBuscar.value.toLowerCase();
@@ -40,8 +42,8 @@ function inicializarBuscaProduto() {
         const opcao = document.createElement('div');
         opcao.classList.add('opcao_produto');
         opcao.innerHTML = `
-        <img class="icone_lupa" src="./assets/lupa.png">
-        <span>você pesquisou por: ${produto.item}</span>
+          <img class="icone_lupa" src="./assets/lupa.png">
+          <span>você pesquisou por: ${produto.item}</span>
         `;
         opcao.addEventListener('click', () => {
           inputBuscar.value = produto.item;
@@ -55,7 +57,9 @@ function inicializarBuscaProduto() {
     }
   });
 }
+
 inicializarBuscaProduto();
+
 
 function listarCategoria() {
   const categoria = document.querySelector('.container_navegacao');

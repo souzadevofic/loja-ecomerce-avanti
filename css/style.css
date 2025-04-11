@@ -78,7 +78,11 @@ header {
     gap: 300px;
 }
 
-.container_barra_pesquisa > input {
+.container_input_buscar {
+    position: relative;
+}
+
+.container_input_buscar input {
     background-image: url('../assets/lupa.png');
     background-repeat: no-repeat;
     background-position: calc(100% - 10px) center;
@@ -102,33 +106,40 @@ header {
 }
 
 /* container ao apertar todas as categorias */
-.container_busca_produto {
+
+.container_input_buscar {
     position: relative;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 110px;
-    left: 390px;
+    width: 420px;
+  }
+  
+  .container_busca_produto {
     position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
     background: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 30vw;
-     
-}
-
-.icone_lupa {
-    height: 1.5vw;
-}
-
-.opcao_produto {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .opcao_produto {
     padding: 10px;
     cursor: pointer;
-}
-
-.opcao_produto:hover {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .opcao_produto:hover {
     background: #f0f0f0;
-}
+  }
+  
+  .icone_lupa {
+    height: 20px;
+  }
+  
 
 .dados_usuario {
     text-align: center;
@@ -747,31 +758,31 @@ footer {
 
     .cabecalho {
         flex-direction: column;  
-    }
+        
+      }
     
     .container_barra_pesquisa {
         flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
-
+    
     .container_barra_pesquisa > img {
         height: 20px;
     }
-
-    .container_barra_pesquisa > input {
+    
+    .container_input_buscar {
+        width: 100%; 
+    }
+    
+    .container_input_buscar input {
         width: 300px;
         height: 40px;
         font-size: 0.8em;
     }
-
+    
     .container_busca_produto {
         font-size: 0.8em;
-        top: 150px;
-        left: 30px;
-        width: 80vw;  
-    }
-
-    .icone_lupa {
-        height: 5vw;
     }
 
     /* Inicio Offcanvas */
@@ -852,13 +863,13 @@ footer {
         align-items: center;
         justify-content: center;
         gap: 10px;
-        
     }
 
     .icones-canvas span {
         position: absolute;
         background-color: #005CFF;
     }
+    /* Fim Offcanvas */
 
 /* Fim do Header */
 
