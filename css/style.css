@@ -60,7 +60,8 @@ header {
     background-color: #005CFF;
     width: 100%;
     text-align: center;
-    color: #ffffff;    
+    color: #ffffff;  
+    padding: 4px;  
 }
 
 .container_cupom_desconto > span > strong {
@@ -106,8 +107,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 7.5vw;
-    left: 26.5vw;
+    top: 110px;
+    left: 370px;
     position: absolute;
     background: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -134,30 +135,29 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .dados_usuario span {
-    top: 0.4vw;
-    right: -0.5vw;
+    top: -4px;
+    right: -5px;
     position: absolute;
-    font-size: 0.7rem;
+    font-size: 0.7em;
     border-radius: 80px;
     justify-content: center;
     align-items: center;
     display: flex;
     color: #FFFFFF;
-    width: 1vw;
+    width: 15px;
     background-color: #005CFF;
 }
 
 .dados_usuario > h3 {
     font-size: 1em;
-    width: 5vw;
-    height: 2.6vw;
 }
 
 .dados_usuario > .icone_usuario {
-    height: 1.5vw;
+    height: 20px;
 }
 
 .container_navegacao > .lista_navegacao {
@@ -179,7 +179,6 @@ header {
 
 .lista_navegacao li:hover {
     color: #005CFF;
-    font-weight: 600;
     cursor: pointer;
 }
 
@@ -343,7 +342,7 @@ header {
 
 .container_lancamento {
     position: relative;
-    margin-top: 100px;  
+    margin-top: 50px;  
 }
 
 .container_lancamento > h3 {
@@ -762,9 +761,9 @@ footer {
     }
 
     .container_busca_produto {
-        font-size: 0.8rem;
-        top: 35vw;
-        left: 8vw;
+        font-size: 0.8em;
+        top: 150px;
+        left: 30px;
         width: 80vw;  
     }
 
