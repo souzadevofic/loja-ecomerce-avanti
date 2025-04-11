@@ -863,13 +863,11 @@ footer {
 
     .container_oferta img {
         margin-top: 38vw;
-        height: 38vw;
-        
+        height: 40vw;
     }
     
     .container_oferta {
-        height: 85vw;
-       
+        height: 78vw;
     }
 
     .titulo_oferta > span {
