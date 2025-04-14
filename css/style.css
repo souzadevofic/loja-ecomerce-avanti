@@ -397,13 +397,14 @@ header {
 .container_card {
     position: relative;
     display: flex;
-    width: 200px;
+    max-width: 200px;
     height: 350px;
     border: solid 1px rgb(207, 207, 207);
     border-radius: 8px;
     text-align: center;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
 }
 
 .container_card  h3 {
@@ -424,10 +425,14 @@ header {
     text-decoration: line-through;
 }
 
+.container_promo strong {
+    font-weight: 700;
+}
+
 .container_card button {
     background-color: #005CFF;
-    width: 170px;
-    height: 50px;
+    width: 180px;
+    height: 45px;
     border: none;
     color: #ffffff;
     font-weight: 700;
@@ -442,23 +447,28 @@ header {
     position: absolute;
     display: flex;
     background-color: #5EC0BE;
-    width: 60px;
+    width: 64px;
+    height: 20px;
     color: #ffffff;
     text-align: center;
     align-items: center;
     justify-content: center;
     left: 90px;
+    top: 240px;
     border-radius: 5px;
 }
 
 .container_card > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 0.8em;
     position: absolute;
     left: 10px;
     top: 20px;
     background-color: #00264E;
     color: #ffffff;
-    width: 4em;
+    width: 50px;
     border-radius: 5px;
 }
 
@@ -940,6 +950,19 @@ footer {
     height: 330px;
 }
 
+.container_card > span {
+    font-size: 0.6em;
+    left: 10px;
+    top: 8px;
+    height: 23px;
+    width: 40px;
+}
+
+.container_promo > a {
+    top: 215px;
+    left: 70px;
+}
+
 .container_card button {
     width: 150px;
 }
@@ -949,7 +972,7 @@ footer {
 }
 
 .imagem_modelo {
-    height: 150px;
+    height: 145px;
 }
 
 .container_titulo_card_lancamento {
