@@ -1109,8 +1109,7 @@ footer {
 /* Inicio do footer */
 footer {
     gap: 30px;
-    height: 670px;
-    
+    height: 650px;
 }
 
 .titulo_accordion {
@@ -1213,12 +1212,12 @@ footer {
 }
 
 .container_patriocinio {
-    gap: 20px;
+    padding: 50px;
 }
 
 .container_patriocinio span {
     font-size: 0.7em;
-    width: 300px;
+    max-width: 350px;
 }
 
 .container_patriocinio img {
