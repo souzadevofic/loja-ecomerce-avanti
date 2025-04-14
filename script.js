@@ -1,27 +1,72 @@
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
+document.addEventListener('DOMContentLoaded', function() {
+  const carrosseis = document.querySelectorAll('.meu-carrossel');
+  carrosseis.forEach(function(carrossel) {
+      const splide = new Splide(carrossel, {
+          type: 'loop',
+          perPage: 5,
+          perMove: 5,
+          gap: '1px',
+          pagination: true,
+          arrows: true,
+          breakpoints: {
+            768: {
+              perPage: 2,
+              perMove: 5,
+              gap: '20px',
+              
+          },
+          480: {
+              perPage: 5,
+              perMove: 2,
+              gap: '175px',
+              
+          }
+          }
+      }).mount();
 
-  pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-  },
-
-  navigation: {
-      nextEl: '.custom-button-next',
-      prevEl: '.custom-button-prev',
-  },
+      const prevArrow = carrossel.querySelector('.splide__arrow--prev');
+      const nextArrow = carrossel.querySelector('.splide__arrow--next');
+      
+      if (prevArrow && nextArrow) {
+        prevArrow.innerHTML = '<img src="assets/icone_voltar.svg" alt="Anterior" class="custom-arrow-img">';
+        nextArrow.innerHTML = '<img src="assets/icone_passar.svg" alt="Próximo" class="custom-arrow-img">';
+        prevArrow.style.backgroundColor = 'transparent';
+        prevArrow.style.border = 'none';
+        nextArrow.style.backgroundColor = 'transparent';
+        nextArrow.style.border = 'none';
+      }
+  });
 });
 
-let produtos = [
-  { "item": "Camisa" },
-  { "item": "Calça" },
-  { "item": "Cordão" },
-  { "item": "Pulseira" },
-  { "item": "Calção" }
-];
+function accordionFooter(){
+  const botoes = document.querySelectorAll('.titulo_accordion');
 
+  botoes.forEach((botao) => {
+    botao.addEventListener('click', () => {
+      const conteudo = botao.nextElementSibling;
+      const ativo = conteudo.classList.contains('ativo');
+
+      document.querySelectorAll('.sobre').forEach(s => s.classList.remove('ativo'));
+      document.querySelectorAll('.titulo_accordion').forEach(b => b.classList.remove('ativo'));
+
+      if (!ativo) {
+        botao.classList.add('ativo');
+        conteudo.classList.add('ativo');
+      }
+    });
+  });
+}
+
+accordionFooter();
+  
 function inicializarBuscaProduto() {
+  let produtos = [
+    { "item": "Camisa" },
+    { "item": "Calça" },
+    { "item": "Cordão" },
+    { "item": "Pulseira" },
+    { "item": "Calção" }
+  ];
   const inputBuscar = document.querySelector('.buscar_produto');
   const containerInput = inputBuscar.closest('.container_input_buscar');
   
@@ -59,7 +104,6 @@ function inicializarBuscaProduto() {
 }
 
 inicializarBuscaProduto();
-
 
 function listarCategoria() {
   const categoria = document.querySelector('.container_navegacao');

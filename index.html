@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image" href="./assets/logo_web.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
     <title>Avanti-E-commerce</title>
   </head>
   <body>
@@ -47,13 +47,14 @@
         </ul>
       </div>
 
+      <div class="icones_carrinho_mobile">
+        <img src="./assets/icone_carrinho.svg" alt="carrinho_de_compras">
+        <span>2</span>
+      </div>
+
       <img src="./assets/icone_hamburguer.svg" alt="hamburguer" class="btn-primary hamburguer_canvas"type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
       <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
         <div class="offcanvas-header">
-          <div class="icones-canvas">
-            <img src="./assets/icone_carrinho.svg" alt="carrinho_de_compras">
-            <span>2</span>
-          </div>
           <div class="usuario_canvas">
             <img src="./assets/icone_usuario.svg" alt="usuario">
             <h5 class="offcanvas-title">Olá, Alisson!</h5>
@@ -85,225 +86,244 @@
     </section>
 
     <section class="container_lancamento">
-      <h3>Lançamentos</h3>
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="card-group">
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="card-group">
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="card-group">
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-            </div>
-          </div>      
+      <div class="container_titulo_card_lancamento">
+          <h3>Lançamentos</h3>
+          <a href="#">Ver mais</a>
       </div>
-        <div class="swiper-pagination"></div>
-      </div>        
-      <div class="custom-button-prev">
-        <img src="./assets/icone_voltar.svg" alt="voltar">
+
+      <div class="splide meu-carrossel">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="container_card">
+                <span>NOVO</span>
+                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="container_promo">
+                  <span>R$100,00</span>
+                  <strong>R$79,90</strong>
+                  <span>Ou em até <strong>10x de R$7,90</strong></span>
+                  <a href="#">10%OFF</a>
+                </div>
+                <button>Comprar</button>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="container_card">
+                <span>NOVO</span>
+                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="container_promo">
+                  <span>R$100,00</span>
+                  <strong>R$79,90</strong>
+                  <span>Ou em até <strong>10x de R$7,90</strong></span>
+                  <a href="#">10%OFF</a>
+                </div>
+                <button>Comprar</button>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="container_card">
+                <span>NOVO</span>
+                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="container_promo">
+                  <span>R$100,00</span>
+                  <strong>R$79,90</strong>
+                  <span>Ou em até <strong>10x de R$7,90</strong></span>
+                  <a href="#">10%OFF</a>
+                </div>
+                <button>Comprar</button>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="container_card">
+                <span>NOVO</span>
+                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="container_promo">
+                  <span>R$100,00</span>
+                  <strong>R$79,90</strong>
+                  <span>Ou em até <strong>10x de R$7,90</strong></span>
+                  <a href="#">10%OFF</a>
+                </div>
+                <button>Comprar</button>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="container_card">
+                <span>NOVO</span>
+                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="container_promo">
+                  <span>R$100,00</span>
+                  <strong>R$79,90</strong>
+                  <span>Ou em até <strong>10x de R$7,90</strong></span>
+                  <a href="#">10%OFF</a>
+                </div>
+                <button>Comprar</button>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="container_card">
+                <span>NOVO</span>
+                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="container_promo">
+                  <span>R$100,00</span>
+                  <strong>R$79,90</strong>
+                  <span>Ou em até <strong>10x de R$7,90</strong></span>
+                  <a href="#">10%OFF</a>
+                </div>
+                <button>Comprar</button>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="container_card">
+                <span>NOVO</span>
+                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="container_promo">
+                  <span>R$100,00</span>
+                  <strong>R$79,90</strong>
+                  <span>Ou em até <strong>10x de R$7,90</strong></span>
+                  <a href="#">10%OFF</a>
+                </div>
+                <button>Comprar</button>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="container_card">
+                <span>NOVO</span>
+                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="container_promo">
+                  <span>R$100,00</span>
+                  <strong>R$79,90</strong>
+                  <span>Ou em até <strong>10x de R$7,90</strong></span>
+                  <a href="#">10%OFF</a>
+                </div>
+                <button>Comprar</button>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="container_card">
+                <span>NOVO</span>
+                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="container_promo">
+                  <span>R$100,00</span>
+                  <strong>R$79,90</strong>
+                  <span>Ou em até <strong>10x de R$7,90</strong></span>
+                  <a href="#">10%OFF</a>
+                </div>
+                <button>Comprar</button>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="container_card">
+                <span>NOVO</span>
+                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="container_promo">
+                  <span>R$100,00</span>
+                  <strong>R$79,90</strong>
+                  <span>Ou em até <strong>10x de R$7,90</strong></span>
+                  <a href="#">10%OFF</a>
+                </div>
+                <button>Comprar</button>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="container_card">
+                <span>NOVO</span>
+                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="container_promo">
+                  <span>R$100,00</span>
+                  <strong>R$79,90</strong>
+                  <span>Ou em até <strong>10x de R$7,90</strong></span>
+                  <a href="#">10%OFF</a>
+                </div>
+                <button>Comprar</button>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="container_card">
+                <span>NOVO</span>
+                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="container_promo">
+                  <span>R$100,00</span>
+                  <strong>R$79,90</strong>
+                  <span>Ou em até <strong>10x de R$7,90</strong></span>
+                  <a href="#">10%OFF</a>
+                </div>
+                <button>Comprar</button>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="container_card">
+                <span>NOVO</span>
+                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="container_promo">
+                  <span>R$100,00</span>
+                  <strong>R$79,90</strong>
+                  <span>Ou em até <strong>10x de R$7,90</strong></span>
+                  <a href="#">10%OFF</a>
+                </div>
+                <button>Comprar</button>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="container_card">
+                <span>NOVO</span>
+                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="container_promo">
+                  <span>R$100,00</span>
+                  <strong>R$79,90</strong>
+                  <span>Ou em até <strong>10x de R$7,90</strong></span>
+                  <a href="#">10%OFF</a>
+                </div>
+                <button>Comprar</button>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="container_card">
+                <span>NOVO</span>
+                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="container_promo">
+                  <span>R$100,00</span>
+                  <strong>R$79,90</strong>
+                  <span>Ou em até <strong>10x de R$7,90</strong></span>
+                  <a href="#">10%OFF</a>
+                </div>
+                <button>Comprar</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev"></button>
+          <button class="splide__arrow splide__arrow--next"></button>
+        </div>
       </div>
-      <div class="custom-button-next">
-        <img src="./assets/icone_passar.svg" alt="avançar">
-      </div>
-    </section>
+  </section>
 
     <section class="container_produto">
       <div class="produto">
@@ -311,7 +331,7 @@
       </div>
 
       <div class="texto_produto">
-        <h2>Lorem Ipsolum</h2>
+        <h2>LOREM IPSUM</h2>
         <span>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, officia neque. Totam repudiandae omnis, mollitia quibusdam pariatur quia deserunt modi explicabo suscipit assumenda, ex iste commodi? Laborum saepe aut delectus architecto odio ea nisi earum ratione facilis quaerat? Incidunt unde quia voluptate, fugiat fuga explicabo doloremque tenetur animi sed perspiciatis!
         </span>
@@ -324,27 +344,35 @@
 
     <section class="container_localizacao">  
       <div class="container_icone_texto">
+        <h3>LOREM IPSUM</h3>
         <div class="container_icone">
           <div class="cor_icone">
             <img class="icone_mapa" src="./assets/icone_map.svg" alt="icone_mapa">
           </div>
-          
-          <div class="cor_icone">
-            <img class="icone_mapa" src="./assets/icone_map.svg" alt="icone_mapa">
-          </div>
-          
-          <div class="cor_icone">
-            <img class="icone_mapa" src="./assets/icone_map.svg" alt="icone_mapa">
+          <div class="texto_localizacao">
+            <span>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span>
           </div>
         </div>
-        <div class="localizacao">
-          <h1>Lorem Ipsolum</h1>
-          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam praesentium rem neque eaque eum laborum!</span>
-          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam praesentium rem neque eaque eum laborum!</span>
-          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam praesentium rem neque eaque eum laborum!</span>
+        
+        <div class="container_icone">
+          <div class="cor_icone">
+            <img class="icone_mapa" src="./assets/icone_map.svg" alt="icone_mapa">
+          </div>
+          <div class="texto_localizacao">
+            <span>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span>
+          </div>
+        </div>
+  
+    
+        <div class="container_icone">
+          <div class="cor_icone">
+            <img class="icone_mapa" src="./assets/icone_map.svg" alt="icone_mapa">
+          </div>
+          <div class="texto_localizacao">
+            <span>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span>
+          </div>
         </div>
       </div>
-
       <div class="container_imagem_xicara_mesa">
         <img src="./assets/imagem_xicara_localiza.svg" alt="xicara_na_mesa" class="xicara_na_mesa">
       </div>    
@@ -367,225 +395,244 @@
       </div>
     </section>
 
-    <section class="container_lancamento">
-      <h3>Lançamentos</h3>
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="card-group">
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
+      <section class="container_lancamento container_lancamento_secao_dois">
+        <div class="container_titulo_card_lancamento">
+            <h3>Lançamentos</h3>
+            <a href="#">Ver mais</a>
+        </div>
 
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
+        <div class="splide meu-carrossel">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="container_card">
+                  <span>NOVO</span>
+                  <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                  <div class="container_promo">
+                    <span>R$100,00</span>
+                    <strong>R$79,90</strong>
+                    <span>Ou em até <strong>10x de R$7,90</strong></span>
+                    <a href="#">10%OFF</a>
+                  </div>
+                  <button>Comprar</button>
                 </div>
-                <button>Comprar</button>
-              </div>
+              </li>
+              <li class="splide__slide">
+                <div class="container_card">
+                  <span>NOVO</span>
+                  <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                  <div class="container_promo">
+                    <span>R$100,00</span>
+                    <strong>R$79,90</strong>
+                    <span>Ou em até <strong>10x de R$7,90</strong></span>
+                    <a href="#">10%OFF</a>
+                  </div>
+                  <button>Comprar</button>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="container_card">
+                  <span>NOVO</span>
+                  <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                  <div class="container_promo">
+                    <span>R$100,00</span>
+                    <strong>R$79,90</strong>
+                    <span>Ou em até <strong>10x de R$7,90</strong></span>
+                    <a href="#">10%OFF</a>
+                  </div>
+                  <button>Comprar</button>
+                </div>
+              </li>
 
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
+              <li class="splide__slide">
+                <div class="container_card">
+                  <span>NOVO</span>
+                  <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                  <div class="container_promo">
+                    <span>R$100,00</span>
+                    <strong>R$79,90</strong>
+                    <span>Ou em até <strong>10x de R$7,90</strong></span>
+                    <a href="#">10%OFF</a>
+                  </div>
+                  <button>Comprar</button>
                 </div>
-                <button>Comprar</button>
-              </div>
+              </li>
 
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
+              <li class="splide__slide">
+                <div class="container_card">
+                  <span>NOVO</span>
+                  <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                  <div class="container_promo">
+                    <span>R$100,00</span>
+                    <strong>R$79,90</strong>
+                    <span>Ou em até <strong>10x de R$7,90</strong></span>
+                    <a href="#">10%OFF</a>
+                  </div>
+                  <button>Comprar</button>
                 </div>
-                <button>Comprar</button>
-              </div>
+              </li>
 
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
+              <li class="splide__slide">
+                <div class="container_card">
+                  <span>NOVO</span>
+                  <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                  <div class="container_promo">
+                    <span>R$100,00</span>
+                    <strong>R$79,90</strong>
+                    <span>Ou em até <strong>10x de R$7,90</strong></span>
+                    <a href="#">10%OFF</a>
+                  </div>
+                  <button>Comprar</button>
                 </div>
-                <button>Comprar</button>
-              </div>
-            </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="container_card">
+                  <span>NOVO</span>
+                  <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                  <div class="container_promo">
+                    <span>R$100,00</span>
+                    <strong>R$79,90</strong>
+                    <span>Ou em até <strong>10x de R$7,90</strong></span>
+                    <a href="#">10%OFF</a>
+                  </div>
+                  <button>Comprar</button>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="container_card">
+                  <span>NOVO</span>
+                  <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                  <div class="container_promo">
+                    <span>R$100,00</span>
+                    <strong>R$79,90</strong>
+                    <span>Ou em até <strong>10x de R$7,90</strong></span>
+                    <a href="#">10%OFF</a>
+                  </div>
+                  <button>Comprar</button>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="container_card">
+                  <span>NOVO</span>
+                  <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                  <div class="container_promo">
+                    <span>R$100,00</span>
+                    <strong>R$79,90</strong>
+                    <span>Ou em até <strong>10x de R$7,90</strong></span>
+                    <a href="#">10%OFF</a>
+                  </div>
+                  <button>Comprar</button>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="container_card">
+                  <span>NOVO</span>
+                  <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                  <div class="container_promo">
+                    <span>R$100,00</span>
+                    <strong>R$79,90</strong>
+                    <span>Ou em até <strong>10x de R$7,90</strong></span>
+                    <a href="#">10%OFF</a>
+                  </div>
+                  <button>Comprar</button>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="container_card">
+                  <span>NOVO</span>
+                  <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                  <div class="container_promo">
+                    <span>R$100,00</span>
+                    <strong>R$79,90</strong>
+                    <span>Ou em até <strong>10x de R$7,90</strong></span>
+                    <a href="#">10%OFF</a>
+                  </div>
+                  <button>Comprar</button>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="container_card">
+                  <span>NOVO</span>
+                  <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                  <div class="container_promo">
+                    <span>R$100,00</span>
+                    <strong>R$79,90</strong>
+                    <span>Ou em até <strong>10x de R$7,90</strong></span>
+                    <a href="#">10%OFF</a>
+                  </div>
+                  <button>Comprar</button>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="container_card">
+                  <span>NOVO</span>
+                  <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                  <div class="container_promo">
+                    <span>R$100,00</span>
+                    <strong>R$79,90</strong>
+                    <span>Ou em até <strong>10x de R$7,90</strong></span>
+                    <a href="#">10%OFF</a>
+                  </div>
+                  <button>Comprar</button>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="container_card">
+                  <span>NOVO</span>
+                  <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                  <div class="container_promo">
+                    <span>R$100,00</span>
+                    <strong>R$79,90</strong>
+                    <span>Ou em até <strong>10x de R$7,90</strong></span>
+                    <a href="#">10%OFF</a>
+                  </div>
+                  <button>Comprar</button>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="container_card">
+                  <span>NOVO</span>
+                  <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                  <div class="container_promo">
+                    <span>R$100,00</span>
+                    <strong>R$79,90</strong>
+                    <span>Ou em até <strong>10x de R$7,90</strong></span>
+                    <a href="#">10%OFF</a>
+                  </div>
+                  <button>Comprar</button>
+                </div>
+              </li>
+            </ul>
           </div>
-
-          <div class="swiper-slide">
-            <div class="card-group">
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-            </div>
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev"></button>
+            <button class="splide__arrow splide__arrow--next"></button>
           </div>
-
-          <div class="swiper-slide">
-            <div class="card-group">
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-
-              <div class="container_card">
-                <span>NOVO</span>
-                <img src="./assets/modelo.svg" alt="modelo" class="imagem_modelo">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-                <div class="container_promo">
-                  <span>R$100,00</span>
-                  <strong>R$79,90</strong>
-                  <span>Ou em até <strong>10x de R$7,90</strong></span>
-                  <a href="#">10%OFF</a>
-                </div>
-                <button>Comprar</button>
-              </div>
-            </div>
-          </div>      
-      </div>
-        <div class="swiper-pagination"></div>
-      </div>        
-      <div class="custom-button-prev">
-        <img src="./assets/icone_voltar.svg" alt="voltar">
-      </div>
-      <div class="custom-button-next">
-        <img src="./assets/icone_passar.svg" alt="avançar">
-      </div>
+        </div>
     </section>
 
     <section class="container_contato">
@@ -616,47 +663,65 @@
           <img src="./assets/logo_avanti.svg" alt="logo_avanti" class="logo_avanti_rodape">
           <img src="./assets/redes_sociais.svg" alt="redes_sociais" class="redes_sociais_rodape">
         </div>
-
-        <div class="sobre">
-          <h4>Institucional</h4>
-          <h5>Sobre Nós</h5>
-          <h5>Nossas Lojas</h5>
-          <h5>Privacidade e Segurança</h5>
-          <h5>Termos e Condições</h5>
-        </div>
-
-        <div class="sobre">
-          <h4>Central de ajuda</h4>
-          <h5>Fale Conosco</h5>
-          <h5>Frete e Entrega</h5>
-          <h5>Trocas e Devoluções</h5>
-          <h5>Formas de Pagamento</h5>
-          <h5>FAQ</h5>
-        </div>
-        <div class="sobre">
-          <h4>Atendimento</h4>
-          <h5><strong>Telefone: </strong>(00) 1234-5678 
-          </h5>
-          <h5><strong>E-mail:</strong> exemplo@exemplo.com.br</h5>
-          <h5 class="horario"> <strong>Horário de atendimento:</strong>
-            Segunda a Sábado: 07h00 às 23h00
-            Domingos e Feriados:  07h00 às 21h00
-          </h5>
+        <div class="container_accordion_mobile">
+          <div class="secao_accordion">
+            <button class="titulo_accordion">Institucional <span class="icone_seta">></span></button>
+            <div class="sobre">
+              <h4>Institucional</h4>
+              <h5>Sobre Nós</h5>
+              <h5>Nossas Lojas</h5>
+              <h5>Privacidade e Segurança</h5>
+              <h5>Termos e Condições</h5>
+            </div>
+          </div>
+  
+          <div class="secao_accordion">
+            <button class="titulo_accordion">Central de ajuda <span class="icone_seta">></span></button>
+            <div class="sobre">
+              <h4>Central de Ajuda</h4>
+              <h5>Fale Conosco</h5>
+              <h5>Frete e Entrega</h5>
+              <h5>Trocas e Devoluções</h5>
+              <h5>Formas de Pagamento</h5>
+              <h5>FAQ</h5>
+            </div>
+          </div>
+  
+          <div class="secao_accordion">
+            <button class="titulo_accordion">Atendimento <span class="icone_seta">></span></button>
+            <div class="sobre">
+              <h4>Atendimento</h4>
+              <h5><strong>Telefone:</strong> (00) 1234-5678</h5>
+              <h5><strong>E-mail:</strong> exemplo@exemplo.com.br</h5>
+              <h5 class="horario"><strong>Horário de atendimento:</strong>
+                Segunda a Sábado: 07h00 às 23h00<br>
+                Domingos e Feriados: 07h00 às 21h00
+              </h5>
+            </div>
+          </div>
         </div>
       </div>
+
       <div class="container_cartao">
-        <img src="./assets/cartao.svg" alt="cartao" class="caratao">
+        <img src="./assets/cartao_amex.svg" alt="cartao_amex">
+        <img src="./assets/cartao_uniao.svg" alt="cartao_uniao">
+        <img src="./assets/cartao_visa.svg" alt="cartao_visa">
+        <img src="./assets/cartao_hipercard.svg" alt="cartao_hipercard">
+        <img src="./assets/cartao_elo.svg" alt="cartao_elo">
+        <img src="./assets/cartao_b.svg" alt="cartao_b">
+        <img src="./assets/cartao_paypal.svg" alt="cartao_paypal">
+        <img src="./assets/cartao_pix.svg" alt="cartao_pix">
+        <img src="./assets/cartao_boleto.svg" alt="cartao_boleto">
       </div>
 
       <div class="container_patriocinio">
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. A rerum placeat deserunt et fugit cum soluta libero, non vitae doloremque facilis, odio exercitationem magnam illum dolor iste corporis eveniet veniam sint sapiente vero! Recusandae deserunt vero iste laudantium minus! Velit esse beatae sed quisquam sint ipsa praesentium deserunt tempore quas.</span>
+        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor.</span>
         <img src="./assets/patriocinio.svg" alt="patriocionio" class="icone_patriocionio">
       </div>
+
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
     <script src="script.js"></script>
-
   </body>
 </html>
