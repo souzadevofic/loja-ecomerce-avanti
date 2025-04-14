@@ -1109,7 +1109,7 @@ footer {
 /* Inicio do footer */
 footer {
     gap: 30px;
-    height: 700px;
+    height: 670px;
     
 }
 
@@ -1134,18 +1134,12 @@ footer {
     
 }
 
-.icone_seta {
-    color: #005CFF;
-    transform: rotate(90deg);
-    font-size: 1.5em;
-}
-
 .titulo_accordion .icone_seta {
     transition: transform 0.3s;
 }
     
 .titulo_accordion.ativo .icone_seta {
-    transform: rotate(270deg);
+    transform: rotate(180deg);
 }
 
 .container_accordion_mobile {
@@ -1158,6 +1152,7 @@ footer {
 .container_accordion_mobile button {
     border: 1px solid rgb(228, 228, 228); 
     font-weight: 700;
+    height: 60px;
 }
 
 .secao_accordion { 
@@ -1167,6 +1162,7 @@ footer {
 .sobre {
     display: none;
     padding: 0 15px;
+    
 }
 
 .sobre.ativo {
@@ -1228,7 +1224,6 @@ footer {
 .container_patriocinio img {
     height: 30px;
 }
-
 /* Fim do footer */
     
 }
