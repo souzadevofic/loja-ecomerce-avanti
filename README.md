@@ -25,7 +25,7 @@ Loja de E-commerce de roupas e acessórios da Avanti
 
 <h3 align="center">Versão Desktop</h3>
 <p align="center">
-  <img src="./assets/capa_web.png" alt="Versão Web" width="90%">
+  <img src="./assets/capa_desktop.png" alt="Versão Web" width="90%">
 </p>
 
 <h3 align="center">Versão Mobile</h3>
