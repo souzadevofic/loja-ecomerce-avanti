@@ -933,11 +933,13 @@ footer {
     position: absolute;
     right: 4px;
     top: 80px;
-
+    gap: 15px;
 }
 
 .container_titulo_sale {
-    width: 200px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .container_titulo_sale strong {
