@@ -20,7 +20,7 @@
           <img src="./assets/logo_avanti.svg" alt="logo_avanti" class="logo_avanti">
           <div class="container_input_buscar">
             <input type="text" placeholder="Digite aqui o que você procura" class="buscar_produto">
-            <button class="botao_pesquisar"><img src="./assets/lupa.svg" alt=""></button>
+            <button type="submit" class="botao_pesquisar"><img src="./assets/lupa.svg" alt=""></button>
           </div>
         </div>
         <div class="dados_usuario">
@@ -648,16 +648,15 @@
 
     <section class="container_registrar">
       <h3>Cadastre-se na nossa <strong>newslatter</strong></h3>
-
       <form class= "container_formulario">
         <div class="container_conteudo">
           <input type="text" class="form"  placeholder="Digite seu nome">
           <input type="text" class="form" placeholder="Digite seu e-mail"> 
           <div class="conferir_checkbox">
             <input type="checkbox" class="checkbox"> 
-            <span> Estou de acordo com a Política de Privacidade</span>
+            <span> Estou de acordo com a <a href="#">Política de Privacidade</a></span>
           </div>     
-          <button type="submit" class=" botao_cadastrar">Cadastrar</button>
+          <button class=" botao_cadastrar">Cadastrar</button>
         </div>
       </form>
     </section>
@@ -665,8 +664,15 @@
     <footer>
       <div class="container_sobre_nos">
         <div class="logo_rede_social">
-          <img src="./assets/logo_avanti.svg" alt="logo_avanti" class="logo_avanti_rodape">
-          <img src="./assets/redes_sociais.svg" alt="redes_sociais" class="redes_sociais_rodape">
+          <div class="container_logo_avanti">
+            <img src="./assets/logo_avanti.svg" alt="logo_avanti" class="logo_avanti_rodape">
+          </div>
+          <div class="container_icones_rede_social">
+            <img src="./assets/icone_instagram.svg" alt="icone_instagram">
+            <img src="./assets/icone_facebook.svg" alt="icone_facebook">
+            <img src="./assets/icone_youtube.svg" alt="icone_youtube">
+            <img src="./assets/icone_tiktok.svg" alt="icone_tiktok">
+          </div>
         </div>
         <div class="container_accordion_mobile">
           <div class="secao_accordion">
@@ -720,8 +726,17 @@
       </div>
 
       <div class="container_patriocinio">
-        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor.</span>
-        <img src="./assets/patriocinio.svg" alt="patriocionio" class="icone_patriocionio">
+        <div class="container_texto_patriocinio">
+          <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor.</span>
+        </div>
+
+        <div class="container_icones_patriocinio">
+          <img src="./assets/icone_encrypt.svg" alt="icone_encrypt">
+          <img src="./assets/icone_vtex_certificado.svg" alt="vtex_certificado">
+          <img src="./assets/icone_avanti.svg" alt="icone_avanti">
+          <img src="./assets/icone_vtex.svg" alt="icone_vtex">
+        </div>
+        
       </div>
 
     </footer>

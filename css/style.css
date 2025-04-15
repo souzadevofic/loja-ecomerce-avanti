@@ -11,6 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Inicio da Biblioteca Splide */
 .splide {
     position: relative;
     width: 1165px;
@@ -40,11 +41,9 @@ html {
 .splide__pagination__page.is-active {
     background: #000000 !important;
 }
-
-/* Fim da Configuração Swipper */
+/* Fim da Biblioteca Splide */
 
 /* Inicio do Header */
-
 header {
     box-shadow: 0px 0px 2px rgb(216, 211, 211);
     width: 100%;
@@ -94,7 +93,7 @@ header {
     width: 50px;
 }
 
-.container_input_buscar button:hover {
+.container_input_buscar button:active {
     background-color: #f8f8f8;
 }
 
@@ -110,8 +109,7 @@ header {
 .container_barra_pesquisa {
     display: flex;
     align-items: center;
-    gap: 80px;
-    
+    gap: 80px; 
 }
 
 .container_barra_pesquisa > img {
@@ -119,7 +117,6 @@ header {
 }
 
 /* container ao apertar todas as categorias */
-
 .container_input_buscar {
     position: relative;
     width: 420px;
@@ -149,10 +146,9 @@ header {
     background: #f0f0f0;
 }
   
-  .icone_lupa {
-    height: 20px;
-  }
-  
+.icone_lupa {
+    height: 15px;
+}
 
 .dados_usuario {
     text-align: center;
@@ -323,13 +319,11 @@ header {
     background-color: #ffffff;
     color: #020202;
 }
-
 /* Fim das configurações de HTML no javascript no lista_categoria*/
 
 /* Fim do Header */
 
 /* Inicio Section container_oferta */
-
 .container_oferta {
     position: relative;
     display: flex;
@@ -376,11 +370,9 @@ header {
     font-weight: 700;
     color: #005CFF;
 }
-
 /* Fim Section container_oferta */
 
 /* Inicio da Section container_lancamento*/
-
 .container_lancamento {
     display: flex;
     align-items: center;
@@ -460,7 +452,7 @@ header {
     border-radius: 8px;
 }
 
-.container_card button:hover {
+.container_card button:active {
     background-color: #0a4ab1;
 }
 
@@ -483,21 +475,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-weight: 700;
     position: absolute;
     left: 10px;
-    top: 20px;
+    top: 10px;
     background-color: #00264E;
     color: #ffffff;
-    width: 50px;
+    height: 22px;
+    width: 41px;
     border-radius: 5px;
 }
-
 /* Fim da Section container_lancamento*/
 
 /* Inicio da Section container_produto */
-
 .container_produto {
     position: relative;
     display: flex;
@@ -515,7 +506,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .produto > img {
@@ -527,7 +517,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
 }
 
 .texto_produto h2 {
@@ -541,13 +530,10 @@ header {
     font-weight: 400;
     line-height: 1.8;
     letter-spacing: 5%;
-
 }
-
 /* Fim da Section container_produto */
 
 /* Inicio Section da container_localizacao */
-
 .container_localizacao {
     margin-top: 80px;
     position: relative;
@@ -565,7 +551,6 @@ header {
     flex-direction: column;
     gap: 20px;
     width: 476px;
- 
 }
 
 .container_icone_texto  h3 {
@@ -603,7 +588,6 @@ header {
 .container_imagem_xicara_mesa img {
     height: 620px;
 }
-
 /* Fim Section da container_localizacao */
 
 /* Inicico da Section escritorio*/
@@ -637,7 +621,6 @@ header {
     font-size: 1.5em;
     font-weight: 400;
 }
-
 /* Fim da Section escritorio*/
 
 /* Inicico da Section container_contato */
@@ -667,8 +650,7 @@ header {
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 .container_conteudo {
@@ -699,6 +681,14 @@ header {
     gap: 10px;
 }
 
+.conferir_checkbox a {
+    color: #000000;
+}
+
+.conferir_checkbox a:hover {
+    color: #005CFF;
+}
+
 .botao_cadastrar {
     background-color: #005CFF;
     border: none;
@@ -709,14 +699,12 @@ header {
     font-weight: 700;
 }
 
-.botao_cadastrar:hover {
+.botao_cadastrar:active {
     background-color: #0a4ab1;
 }
-
 /* Fim da Section container_contato */
 
 /* Inicico do Footer */
-
 .titulo_accordion {
     display: none; 
 }
@@ -745,9 +733,15 @@ footer {
     gap: 20px;
 }
 
-.logo_rede_social img {
-    height: 25px;
-    
+.container_logo_avanti img {
+    height: 30px;
+}
+
+.container_icones_rede_social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
 }
 
 .container_sobre_nos {
@@ -790,21 +784,23 @@ footer {
     flex-direction: column;
     gap: 30px;
     width: 100%;
+    padding: 20px; 
     background-color: #FFFFFF;
     height: 200px;
 }
 
 .container_patriocinio span {
-    font-size: 1em;
+    font-size: 0.7em;
+    line-height: 20px;
     display: flex;
     text-align: center;
     width: 800px;
 }
 
-.container_patriocinio img {
-    height: 30px;
+.container_icones_patriocinio {
+    display: flex;
+    gap: 30px;
 }
-
 /* Fim do Footer */
 
 /* Responsividade (Mobile) */
@@ -1189,7 +1185,6 @@ footer {
 
 .sobre h4 {
     display: none;
-    
 }
 
 .titulo_accordion .icone_seta {
@@ -1253,14 +1248,6 @@ footer {
     width: 100%;
 }
 
-.logo_rede_social {
-    gap: 30px;
-}
-
-.logo_rede_social img {
-    height: 25px;  
-}
-
 .container_sobre_nos {
     text-align: center;
     align-items: center;
@@ -1270,17 +1257,9 @@ footer {
     width: 100%;
 }
 
-.container_patriocinio {
-    padding: 50px;
-}
-
 .container_patriocinio span {
     font-size: 0.7em;
     max-width: 350px;
-}
-
-.container_patriocinio img {
-    height: 30px;
 }
 /* Fim do footer */
     
