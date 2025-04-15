@@ -60,14 +60,8 @@ function accordionFooter(){
 accordionFooter();
   
 function inicializarBuscaProduto() {
-  let produtos = [
-    { "item": "Camisa" },
-    { "item": "Calça" },
-    { "item": "Cordão" },
-    { "item": "Pulseira" },
-    { "item": "Calção" }
-  ];
   const inputBuscar = document.querySelector('.buscar_produto');
+  const botaoPesquisar = document.querySelector('.botao_pesquisar');
   const containerInput = inputBuscar.closest('.container_input_buscar');
   
   const containerBusca = document.createElement('div');
@@ -75,30 +69,49 @@ function inicializarBuscaProduto() {
   containerBusca.style.display = 'none'; 
   containerInput.appendChild(containerBusca);
 
-  inputBuscar.addEventListener('input', () => {
-    const termo = inputBuscar.value.toLowerCase();
+  function fecharBusca() {
+    containerBusca.style.display = 'none';
+  }
+
+  inputBuscar.addEventListener('focus', () => {
+    if (inputBuscar.value.trim() && containerBusca.innerHTML.trim()) {
+      containerBusca.style.display = 'block';
+    }
+  });
+
+  botaoPesquisar.addEventListener('click', () => {
+    const termo = inputBuscar.value.trim().toLowerCase();
     containerBusca.innerHTML = '';
 
     if (termo) {
       containerBusca.style.display = 'block'; 
-      const filtrados = produtos.filter(produto => produto.item.toLowerCase().includes(termo));
       
-      filtrados.forEach(produto => {
-        const opcao = document.createElement('div');
-        opcao.classList.add('opcao_produto');
-        opcao.innerHTML = `
-          <img class="icone_lupa" src="./assets/lupa.png">
-          <span>você pesquisou por: ${produto.item}</span>
-        `;
-        opcao.addEventListener('click', () => {
-          inputBuscar.value = produto.item;
-          containerBusca.innerHTML = '';
-          containerBusca.style.display = 'none'; 
-        });
-        containerBusca.appendChild(opcao);
+      const opcao = document.createElement('div');
+      opcao.classList.add('opcao_produto');
+      opcao.innerHTML = `
+        <img class="icone_lupa" src="./assets/lupa.svg">
+        <span>você pesquisou por: ${termo}</span>
+      `;
+      opcao.addEventListener('click', () => {
+        inputBuscar.value = termo;
+        fecharBusca();
       });
+      containerBusca.appendChild(opcao);
     } else {
-      containerBusca.style.display = 'none'; 
+      fecharBusca();
+    }
+  });
+
+  inputBuscar.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      botaoPesquisar.click();
+      fecharBusca(); 
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!containerInput.contains(e.target)) {
+      fecharBusca();
     }
   });
 }

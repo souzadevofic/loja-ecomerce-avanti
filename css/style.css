@@ -81,18 +81,29 @@ header {
 }
 
 .container_input_buscar {
+    border: 1px solid rgb(207, 207, 207); 
     position: relative;
+    display: flex;
+    border-radius: 10px;
+}
+
+.container_input_buscar button {
+    background-color: #ffffff;
+    border: none; 
+    border-radius: 10px;
+    width: 50px;
+}
+
+.container_input_buscar button:hover {
+    background-color: #f8f8f8;
 }
 
 .container_input_buscar input {
-    background-image: url('../assets/lupa.png');
-    background-repeat: no-repeat;
-    background-position: calc(100% - 10px) center;
     border-radius: 10px;
-    border: 1px solid rgb(207, 207, 207); 
+    border: none;
     height: 45px;
     width: 420px;
-    padding-left: 10px;
+    padding-left: 20px;
     outline: none; 
 }
 
@@ -407,7 +418,7 @@ header {
 .container_card {
     position: relative;
     display: flex;
-    max-width: 200px;
+    width: 200px;
     height: 350px;
     border: solid 1px rgb(207, 207, 207);
     border-radius: 8px;
@@ -820,7 +831,7 @@ footer {
 }
     
 .container_input_buscar input {
-    width: 340px;
+    width: 290px;
     height: 40px;
     font-size: 0.8em;
 }
